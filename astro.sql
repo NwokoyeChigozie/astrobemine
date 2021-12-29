@@ -194,6 +194,16 @@ CREATE TABLE `password_recovery` (
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;
 
+CREATE TABLE `user_verification` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `email` VARCHAR(100) NOT NULL,
+    `vr` VARCHAR(100) NOT NULL,
+    `elapse_time` VARCHAR(100) NOT NULL,
+    `count` INT(50) NOT NULL DEFAULT 0,
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
+
 CREATE TABLE `payment_errors` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `$debug_email` VARCHAR(100) NOT NULL,
