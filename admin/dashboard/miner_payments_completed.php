@@ -86,7 +86,7 @@ include("../../phpscripts/connection.php");
             
           </li>
           <li class="nav-item has-treeview menu-open">
-            <a href="./users.php" class="nav-link active">
+            <a href="./users.php" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Users
@@ -102,7 +102,7 @@ include("../../phpscripts/connection.php");
             </a>
           </li> 
           <li class="nav-item has-treeview menu-open">
-            <a href="./miner_payments.php" class="nav-link">
+            <a href="./miner_payments.php" class="nav-link active">
               <i class="nav-icon fa fa-paper-plane"></i>
               <p>
                 Miner Payments
@@ -171,12 +171,10 @@ include("../../phpscripts/connection.php");
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Users</h3>
-            
-<!--            <div class="card-tools">-->
-                <form method="GET" action="./users.php?email=<?php echo $_GET['email']; ?>" class="form-inline ml-3" style="margin-left:40px !important; padding-left:30px !important">
+          <h3 class="card-title">Payments</h3>
+                <form method="GET" action="./payments.php?p=<?php echo $_GET['p']; ?>" class="form-inline ml-3" style="margin-left:40px !important; padding-left:30px !important">
                   <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search with email" aria-label="Search" name="email" value="<?php if(isset($_GET['email'])){ echo $_GET['email']; }else{ echo '';} ?>" style="width:300px">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search with Username" aria-label="Search" name="p" value="<?php if(isset($_GET['p'])){ echo $_GET['p']; }else{ echo '';} ?>" style="width:300px">
                     <div class="input-group-append">
                       <button class="btn btn-navbar" type="submit" style>
                         <i class="fas fa-search"></i>
@@ -184,7 +182,6 @@ include("../../phpscripts/connection.php");
                     </div>
                   </div>
                 </form>
-<!--            </div>-->
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
               <i class="fas fa-minus"></i></button>
@@ -194,109 +191,186 @@ include("../../phpscripts/connection.php");
           <table class="table table-striped projects">
                <thead>
                   <tr>
-                      <th style="width: 12%">
+
+                  <th style="width: 8%">
                           ID
                       </th>
-                      <th style="width: 25%">
-                          Name
+                      <th style="width: 10%">
+                         Username
                       </th>
-                      <th style="width: 28%">
-                         E-mail
+                      <th style="width: 12%">
+                         Miner Type
                       </th>
-
-                      <th>
-                          Wallet Address
+                      <th style="width: 8%">
+                          Amount($)
                       </th>
-                      <th style="width: 8%" class="text-center">
-                          Account status
+                      <th style="width: 8%">
+                         Amount(BTC/ETH)
                       </th>
-<!--
-                      <th style="width: 8%" class="text-center">
-                          Last seen
+                      <th style="width: 13%">
+                         Hashcode
                       </th>
--->
-                      <th style="width: 20%">
+                      <th style="width: 16%" class="text-center">
+                          Status
                       </th>
+                      <th style="width: 15%" class="text-center">
+                      </th>
+                      <a class='btn btn-info btn-sm' href='payments_completed.php' style="float:right;margin-right:10px;margin-top:20px">
+                              Completed Payments
+                          </a>
                   </tr>
               </thead>
               <tbody>
-
 <?php
-if(isset($_GET['email'])){
-    $s_email = $_GET['email'];
-    $sql = "SELECT * FROM `users` WHERE email = '$s_email'";
+if(isset($_GET['p'])){
+    $s_p = $_GET['p'];
+    $sql = "SELECT * FROM `mining_payments` WHERE username = '$s_p'  ORDER BY id DESC ";
               if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result)>0){
         while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                   $id = $row['id']; 
-    $full_name =$row['full_name']; 
-    $email =$row['email']; 
-    $bitcoin_wallet_address =$row['bitcoin_wallet_address']; 
-    $account_status =$row['account_status']; 
-            
-                   echo " <tr>";
-                   echo "
-                   <td>$id</td>
-                   <td>$full_name</td>
-                   <td>$email</td>
-                   <td>$bitcoin_wallet_address</td>
-                   <td>$account_status</td>
-                   
-                   <td class='project-actions text-right'>
-
-                          <a class='btn btn-info btn-sm' href='edit.php?id=$id'>
-                              <i class='fas fa-pencil-alt'>
-                              </i>
-                              Edit
-                          </a>
-                          <a class='btn btn-danger btn-sm' href='delete.php?id=$id'>
-                              <i class='fas fa-trash'>
-                              </i>
-                              Delete
-                          </a>
-                      </td>";     
-                   echo " </tr>";
+                   $payment_id = $row['id']; 
+                   $payment_u_id = $row['u_id']; 
+                   $payment_username = $row['username']; 
+                   $payment_type = $row['type']; 
+                   $payment_type_name = $row['type_name'];
+                   $payment_from_currency = $row['from_currency']; 
+                   $payment_to_currency = $row['to_currency']; 
+                   $payment_entered_amount = $row['entered_amount']; 
+                   $payment_amount = $row['amount']; 
+                   $payment_status = $row['status'];
+                    $hashcode = $row['hashcode'];
+                    $ech_status = "";
+                    $color = "";
+                    $m_b = "<td class='project-actions text-right'>
+                        
+                                                  <a style='margin:4px' class='btn btn-success btn-sm' href='miner_payments_confirm.php?id=$payment_id'>
+                                                      <i class='fas fa-pencil-alt'>
+                                                      </i>
+                                                      Confirm
+                                                  </a>
+                        
+                                                  <a class='btn btn-danger btn-sm' href='miner_payments_delete.php?id=$payment_id'>
+                                                      <i class='fas fa-trash'>
+                                                      </i>
+                                                      Remove
+                                                  </a>
+                                              </td>";
+                    if($payment_status == "initialized"){
+                        $colspan = 2;
+                        $m_b = ''; 
+                        $color = "#FFFF99";
+                        $ech_status = "Awaiting Hashcode";
+                    }elseif($payment_status == "pending"){
+                        $colspan =1;
+                        $color = "#0066b2";
+                        $ech_status = "Pending Confirmation";
+                    }elseif($payment_status == "completed"){
+                        $colspan = 2;
+                        $m_b = '';
+                        $color = "#50C878";
+                        $ech_status = "Payment Completed";
+                    }elseif($payment_status == "error"){
+                        $colspan = 2;
+                        $m_b = '';
+                        $color = "#FF003F";
+                        $ech_status = "Canceled";
+                    }
+           
+                    if($payment_status == "completed" || $payment_status == "error"){
+                                           echo " <tr style='background-color:$color !important'>";
+                                           echo "
+                                           <td>$payment_id</td>
+                                           <td>$payment_username</td>
+                                           <td>$payment_type_name</td>
+                                           <td>$payment_entered_amount ($payment_from_currency)</td>
+                                           <td>$payment_amount ($payment_to_currency)</td>
+                                            <td style='max-width:150px;font-size:14px !important;'>$hashcode</td>
+                                           <td style='font-size:13px !important;' colspan='$colspan'>$ech_status</td>";     
+                                           if($payment_status == "pending" || $payment_status == "completed"){
+                                               echo $m_b;
+                                           }else{
+                                           }
+                                    echo "</tr>";
+                    }
         }
     }
           }
 }else{
-$sql = "SELECT * FROM `users`" ;
-          if($result = mysqli_query($link, $sql)){
+   $sql = "SELECT * FROM `mining_payments` ORDER BY id DESC ";
+              if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result)>0){
         while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-                   $id = $row['id']; 
-    $full_name =$row['full_name']; 
-    $email =$row['email']; 
-    $bitcoin_wallet_address =$row['bitcoin_wallet_address']; 
-    $account_status =$row['account_status']; 
-            
-                   echo " <tr>";
-                   echo "
-                   <td>$id</td>
-                   <td>$full_name</td>
-                   <td>$email</td>
-                   <td>$bitcoin_wallet_address</td>
-                   <td>$account_status</td>
-                   
-                   <td class='project-actions text-right'>
+                   $payment_id = $row['id']; 
+                   $payment_u_id = $row['u_id']; 
+                   $payment_username = $row['username']; 
+                   $payment_type = $row['type']; 
+                   $payment_type_name = $row['type_name'];
+                   $payment_from_currency = $row['from_currency']; 
+                   $payment_to_currency = $row['to_currency']; 
+                   $payment_entered_amount = $row['entered_amount']; 
+                   $payment_amount = $row['amount']; 
+                   $payment_status = $row['status'];
+                    $hashcode = $row['hashcode'];
+                    $ech_status = "";
+                    $color = "";
+                    $m_b = "<td class='project-actions text-right'>
+                        
+                                                  <a style='margin:4px' class='btn btn-success btn-sm' href='miner_payments_confirm.php?id=$payment_id'>
+                                                      <i class='fas fa-pencil-alt'>
+                                                      </i>
+                                                      Confirm
+                                                  </a>
+                        
+                                                  <a class='btn btn-danger btn-sm' href='miner_payments_delete.php?id=$payment_id'>
+                                                      <i class='fas fa-trash'>
+                                                      </i>
+                                                      Remove
+                                                  </a>
+                                              </td>";
+                    if($payment_status == "initialized"){
+                        $colspan = 2;
+                        $m_b = ''; 
+                        $color = "#FFFF99";
+                        $ech_status = "Awaiting Hashcode";
+                    }elseif($payment_status == "pending"){
+                        $colspan =1;
+                        $color = "#0066b2";
+                        $ech_status = "Pending Confirmation";
+                    }elseif($payment_status == "completed"){
+                        $colspan = 2;
+                        $m_b = '';
+                        $color = "#50C878";
+                        $ech_status = "Payment Completed";
+                    }elseif($payment_status == "error"){
+                        $colspan = 2;
+                        $m_b = ""; 
+                        $color = "#FF003F";
+                        $ech_status = "Canceled";
+                    }
+           
+                    if($payment_status == "completed" || $payment_status == "error"){
+                                           echo " <tr style='background-color:$color !important'>";
+                                           echo "
+                                           <td>$payment_id</td>
+                                           <td>$payment_username</td>
+                                           <td>$payment_type_name</td>
+                                           <td>$payment_entered_amount ($payment_from_currency)</td>
+                                           <td>$payment_amount ($payment_to_currency)</td>
+                                            <td style='max-width:150px;font-size:14px !important;'>$hashcode</td>
+                                           <td style='font-size:13px !important;' colspan='$colspan'>$ech_status</td>";     
+                                           if($payment_status == "pending" || $payment_status == "completed" || $payment_status == "initialized"){
+                                               echo $m_b;
+                                           }else{
+                                           }
+                                    echo "</tr>";
+                    }
 
-                          <a class='btn btn-info btn-sm' href='edit.php?id=$id'>
-                              <i class='fas fa-pencil-alt'>
-                              </i>
-                              Edit
-                          </a>
-                          <a class='btn btn-danger btn-sm' href='delete.php?id=$id'>
-                              <i class='fas fa-trash'>
-                              </i>
-                              Delete
-                          </a>
-                      </td>";     
-                   echo " </tr>";
         }
     }
           }
 }
 ?>
+
 
                   
                   

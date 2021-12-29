@@ -244,6 +244,7 @@ if($history_type != ""){
                                 <option value="Deposit">Deposit</option>
                                 <option value="Withdrawal">Withdrawal</option>
                                 <option value="Earning">Earning</option>
+                                <option value="BTC Mining">BTC Mining</option>
                                 <option value="Referral commission">Referral commission</option>
                             </select>
                         </div>

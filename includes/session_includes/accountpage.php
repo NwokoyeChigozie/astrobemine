@@ -205,6 +205,7 @@
       </div>
     </form>
   </div>
+  
   <div class="invest-rate" bis_skin_checked="1">
     <div class="invest-rate__left" bis_skin_checked="1">
       <div class="invest-rate__title" bis_skin_checked="1">
@@ -247,6 +248,150 @@
       </div>
     </div>
   </div>
+  
+</div>
+<div class="col-md-12 col-sm-12" bis_skin_checked="1">
+<div class="container mt-5 mb-3">
+  <div class="affiliate-program-title">
+    <h2 style="text-align: center;"> Bitcoin Mining</h2>
+  </div>
+
+  <div class="grid-box">
+    <div class="w-85">
+      <div class="border-full">
+        <div class="text-center">
+          <p class="blue font-bold text-lg">BITMAIN ANTMINER T17+</p>
+          <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
+        </div>
+        <div class="my-2">
+          <div class="flex grey-bg rounded-sm mb-2">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
+            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">64 th/s</p>
+          </div>
+          <div class="flex grey-bg rounded-sm mb-2">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
+            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3300w</p>
+          </div>
+          <div class="flex grey-bg rounded-sm">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
+            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000408 BTC</p>
+          </div>
+        </div>
+        <div class="text-center price-section">
+          <p class="text-normal ">$68</p>
+          <!-- <p class="text-xs mt-0 mb-1">(for 1/100)</p> -->
+          <button class="text-capitalize buy-btn buy-btn2">buy</button>
+          <input class="buy-price" type="hidden" value='68'>
+          <input class="buy-name" type="hidden" value='BITMAIN ANTMINER T17+'>
+          <!-- <p class="text-xs mt-1">Calculate profit</p> -->
+        </div>
+      </div>
+    </div>
+
+    <li style="display:none"> <a id="mining1_onclick" onclick="openModal('buy_mining_modal1')">
+    </a> </li>
+    <li style="display:none"> <a id="mining2_onclick" onclick="openModal('buy_mining_modal2')">
+    </a> </li>
+
+
+    <div class="w-85">
+      <div class="border-full">
+        <div class="text-center">
+          <p class="blue font-bold text-lg">BITMAIN ANTMINER T19</p>
+          <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
+        </div>
+        <div class="my-2">
+          <div class="flex grey-bg rounded-sm mb-2">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
+            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">84 th/s</p>
+          </div>
+          <div class="flex grey-bg rounded-sm mb-2">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
+            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3150w</p>
+          </div>
+          <div class="flex grey-bg rounded-sm">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
+            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000536 BTC</p>
+          </div>
+        </div>
+        <div class="text-center price-section">
+          <p class="text-normal ">from $229</p>
+          <!-- <p class="text-xs mt-0 mb-1">(for 1/100)</p> -->
+          <button class="text-capitalize buy-btn buy-btn2">buy</button>
+          <!-- <p class="text-xs mt-1">Calculate profit</p> -->
+          <input class="buy-price" type="hidden" value='229'>
+          <input class="buy-name" type="hidden" value='BITMAIN ANTMINER T19'>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-85">
+      <div class="border-full">
+        <div class="text-center">
+          <p class="blue font-bold text-lg">BITMAIN ANTMINER S19</p>
+          <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
+        </div>
+        <div class="my-2">
+          <div class="flex grey-bg rounded-sm mb-2">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
+            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">110 th/s</p>
+          </div>
+          <div class="flex grey-bg rounded-sm mb-2">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
+            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3500w</p>
+          </div>
+          <div class="flex grey-bg rounded-sm">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
+            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000702 BTC</p>
+          </div>
+        </div>
+        <div class="text-center price-section">
+          <p class="text-normal ">from $323</p>
+          <!-- <p class="text-xs mt-0 mb-1">(for 1/100)</p> -->
+          <button class="text-capitalize buy-btn buy-btn2">buy</button>
+          <!-- <p class="text-xs mt-1">Calculate profit</p> -->
+          <input class="buy-price" type="hidden" value='323'>
+          <input class="buy-name" type="hidden" value='BITMAIN ANTMINER S19'>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <div class="border-full blue-bg">
+        <div class="text-center">
+          <div class="flex-d">
+            <p class="font-bold text-lg text-white">BEMINE OS17+</p>
+            <p class="rounded-full white-bg circle">?</p>
+          </div>
+          <p class="text-sm mt-0 text-uppercase text-white">(sha-256)</p>
+        </div>
+        <div class="my-2">
+          <div class="flex grey-bg rounded-sm mb-2">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
+            <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">97 th/s</p>
+          </div>
+          <div class="flex grey-bg rounded-sm mb-2">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
+            <p class="white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3100w</p>
+          </div>
+          <div class="flex grey-bg rounded-sm">
+            <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
+            <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000619 BTC</p>
+          </div>
+        </div>
+        <div class="text-center price-section">
+          <p class="text-normal text-white">from $177</p>
+          <!-- <p class="text-xs mt-0 mb-1 text-white">(for 1/50)</p> -->
+          <button class="text-capitalize buy-btn blue buy-btn2" >buy</button>
+          <!-- <p class="text-xs mt-1 text-white">Calculate profit</p> -->
+          <input class="buy-price" type="hidden" value='177'>
+          <input class="buy-name" type="hidden" value='BEMINE OS17+'>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
 </div>
 
 </div>
@@ -434,133 +579,7 @@
   }
 </style>
 
-<div class="container mt-5 mb-3">
-  <div class="affiliate-program-title">
-    <h2 style="text-align: center;"> Bitcoin Mining</h2>
-  </div>
 
-  <div class="grid-box">
-    <div class="w-85">
-      <div class="border-full">
-        <div class="text-center">
-          <p class="blue font-bold text-lg">BITMAIN ANTMINER T17+</p>
-          <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
-        </div>
-        <div class="my-2">
-          <div class="flex grey-bg rounded-sm mb-2">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">64 th/s</p>
-          </div>
-          <div class="flex grey-bg rounded-sm mb-2">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3300w</p>
-          </div>
-          <div class="flex grey-bg rounded-sm">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
-            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000408 BTC</p>
-          </div>
-        </div>
-        <div class="text-center">
-          <p class="text-normal ">from $68</p>
-          <p class="text-xs mt-0 mb-1">(for 1/100)</p>
-          <button class="text-capitalize buy-btn">buy</button>
-          <p class="text-xs mt-1">Calculate profit</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w-85">
-      <div class="border-full">
-        <div class="text-center">
-          <p class="blue font-bold text-lg">BITMAIN ANTMINER T17+</p>
-          <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
-        </div>
-        <div class="my-2">
-          <div class="flex grey-bg rounded-sm mb-2">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">84 th/s</p>
-          </div>
-          <div class="flex grey-bg rounded-sm mb-2">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3150w</p>
-          </div>
-          <div class="flex grey-bg rounded-sm">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
-            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000536 BTC</p>
-          </div>
-        </div>
-        <div class="text-center">
-          <p class="text-normal ">from $229</p>
-          <p class="text-xs mt-0 mb-1">(for 1/100)</p>
-          <button class="text-capitalize buy-btn">buy</button>
-          <p class="text-xs mt-1">Calculate profit</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w-85">
-      <div class="border-full">
-        <div class="text-center">
-          <p class="blue font-bold text-lg">BITMAIN ANTMINER T17+</p>
-          <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
-        </div>
-        <div class="my-2">
-          <div class="flex grey-bg rounded-sm mb-2">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">110 th/s</p>
-          </div>
-          <div class="flex grey-bg rounded-sm mb-2">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3500w</p>
-          </div>
-          <div class="flex grey-bg rounded-sm">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
-            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000702 BTC</p>
-          </div>
-        </div>
-        <div class="text-center">
-          <p class="text-normal ">from $323</p>
-          <p class="text-xs mt-0 mb-1">(for 1/100)</p>
-          <button class="text-capitalize buy-btn">buy</button>
-          <p class="text-xs mt-1">Calculate profit</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="">
-      <div class="border-full blue-bg">
-        <div class="text-center">
-          <div class="flex-d">
-            <p class="font-bold text-lg text-white">BEMINE OS17+</p>
-            <p class="rounded-full white-bg circle">?</p>
-          </div>
-          <p class="text-sm mt-0 text-uppercase text-white">(sha-256)</p>
-        </div>
-        <div class="my-2">
-          <div class="flex grey-bg rounded-sm mb-2">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-            <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">97 th/s</p>
-          </div>
-          <div class="flex grey-bg rounded-sm mb-2">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-            <p class="white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3100w</p>
-          </div>
-          <div class="flex grey-bg rounded-sm">
-            <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
-            <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000619 BTC</p>
-          </div>
-        </div>
-        <div class="text-center">
-          <p class="text-normal text-white">from $177</p>
-          <p class="text-xs mt-0 mb-1 text-white">(for 1/50)</p>
-          <button class="text-capitalize buy-btn blue">buy</button>
-          <p class="text-xs mt-1 text-white">Calculate profit</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 <footer>
   <div class="hidden-menu" style="display:none;" bis_skin_checked="1">

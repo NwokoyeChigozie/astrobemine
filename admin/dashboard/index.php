@@ -109,6 +109,14 @@ include("../../phpscripts/connection.php");
             </a>
           </li> 
           <li class="nav-item has-treeview menu-open">
+            <a href="./miner_payments.php" class="nav-link">
+              <i class="nav-icon fa fa-paper-plane"></i>
+              <p>
+                Miner Payments
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item has-treeview menu-open">
             <a href="./withdrawal_requests.php" class="nav-link">
               <i class="nav-icon fa fa-arrow-up"></i>
               <p>

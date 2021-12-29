@@ -180,6 +180,25 @@ CREATE TABLE `payments` (
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;
 
+CREATE TABLE `mining_payments` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `u_id` INT(11) NOT NULL,
+    `username` VARCHAR(100) NOT NULL DEFAULT '',
+    `type` VARCHAR(100) NOT NULL DEFAULT '',
+    `type_name` VARCHAR(100) NOT NULL DEFAULT '',
+    `from_currency` VARCHAR(100) NOT NULL DEFAULT '',
+    `entered_amount` VARCHAR(100) NOT NULL DEFAULT '',
+    `to_currency` VARCHAR(100) NOT NULL DEFAULT '',
+    `amount` VARCHAR(100) NOT NULL DEFAULT '',
+    `gateway_id` VARCHAR(1000) NOT NULL DEFAULT '',
+    `gateway_url` VARCHAR(500) NOT NULL DEFAULT '',
+    `hashcode` VARCHAR(500) NOT NULL DEFAULT '',
+    `status` VARCHAR(100) NOT NULL DEFAULT '',
+    `created_at` VARCHAR(100) NOT NULL DEFAULT '',
+    `update_at` VARCHAR(100) NOT NULL DEFAULT '',
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
+
 CREATE TABLE `password_recovery` (
     `id` INT NOT NULL AUTO_INCREMENT,
     `email` VARCHAR(100) NOT NULL,

@@ -2959,6 +2959,267 @@ s0.parentNode.insertBefore(s1,s0);
             </script>
 
         </div>
+        <div class="modal-general buy_mining_modal1" bis_skin_checked="1" style="display: none;">
+            <button class="modal-close" id="mining1_close">
+                <svg viewBox="0 0 11.58 11.58">
+                    <use xlink:href="#closeIcon"></use>
+                </svg>
+            </button>
+            <form method="post" id="mining_form1">
+
+                <h2 style="text-align:center;">Buy <span class="miner-name-span"></span> With BTC/ETH</h2>
+                <h4 style="text-align:center;">to AstroForex</h4>
+                <input type="hidden" value="" id="miner-price">
+                <input type="hidden" value="" id="miner-name">
+                <div class="input-holder-byicon">
+                    <label for="de_amount" style="margin-left:10px;color:#696969">Amount($):</label><br>
+                    <input type="text" name="minin_amount" id="minin_amount" value='0' style="font-size: 14px;" autofocus
+                        placeholder="Amount" readonly>
+                </div><br>
+                <div class="input-holder-byicon">
+                    <label for="plan" style="margin-left:10px;color:#A8A8A8">Select Cryptocurrency:</label><br>
+                    <select id="buy_currency" class="plan_select" name="buy_currency"
+                        style="height:60px !important;width:inherit !important;font-size:13px !important;padding:0px 15px !important;margin-right:0px !important;border-radius:4px;">
+                        <option value="">Select Cryptocurrency</option>
+                        <option value="BTC">BTC</option>
+                        <option value="ETH">ETH</option>
+                    </select>
+                </div><br>
+                <div class="input-holder-byicon">
+                    <label for="de_email" style="margin-left:10px;color:#696969">Enter E-mail: NB(will be used to receive further information after payment confirmation)</label><br>
+                    <input type="text"  id="buy_email" value='' style="font-size: 14px;" autofocus
+                        placeholder="E-mail">
+                </div>
+
+
+                <div class="account-modal-bottom"
+                    style="padding: 0 !important; position: relative; margin: 40px auto !important;text-align: center;display: flex;justify-content: center; ">
+                    <button class="btn btn--blue register-btn" style="text-decoration:none" id="buy_submit"> <span>Pay For </span><span class="miner-name-span"></span> 
+                        <div class="spinner" style="display:block">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </button>
+                </div>
+                <div class="account-modal-bottom mn1_message"
+                    style="padding: 0 !important; position: relative; margin: 40px auto !important;text-align: center;display: flex;justify-content: center; ">
+                </div>
+
+            </form>
+            <script>
+            $(document).ready(function() {
+                $(".buy-btn2").click(function(event) {
+                    console.log("clicked buy button");
+                    var price = $(this).siblings('.buy-price').val();
+                    var name = $(this).siblings('.buy-name').val();
+                    
+                    $(".miner-name-span").html(name);
+                    $("#minin_amount").val(price);
+                    $("#miner-price").val(price);
+                    $("#miner-name").val(name);
+                    $("#mining1_onclick").trigger("click");
+                });
+
+
+                $("#mining_form1").submit(function(event) {
+                    event.preventDefault();
+                    var u_id = <?php
+                                    if (isset($_SESSION['id'])) {
+                                        echo '"' . $_SESSION['id'] . '"';
+                                    }
+                                    ?>;
+                    var username = <?php
+                                        if (isset($_SESSION['id'])) {
+                                            echo '"' . $username . '"';
+                                        }
+                                        ?>;
+                    var de_amount = $("#miner-price").val();
+                    var de_email = $("#buy_email").val();
+                    var pay_currency = $("#buy_currency").val();
+                    //                var type = $("input[name='h_id']:checked").val();
+                    var type_r = "BTC Mining";
+                    var type_name = $("#miner-name").val();
+                    var buy_submit = $("#buy_submit").val();
+                    console.log("Traced Type: " + type_r)
+
+                    console.log('u_id: ' + u_id + 'username: ' + username + 'de_amount: ' + de_amount + 'de_email: ' + de_email + 'pay_currency: ' + pay_currency + 'type_r: ' + type_r + 'type_name: ' + type_name + 'buy_submit: ' + buy_submit);
+
+                    $("#buy_submit").html('<b>....</b>');
+                    $.ajax({
+                        type: "POST",
+                        url: "phpscripts/mining_process.php/",
+                        dataType: "json",
+                        data: {
+
+                            u_id: u_id,
+                            username: username,
+                            de_amount: de_amount,
+                            pay_currency: pay_currency,
+                            de_email: de_email,
+                            type: type_r,
+                            name: type_name,
+                            buy_submit: buy_submit
+                        },
+                        success: function(response) {
+                            let json = null;
+                            try {
+                                json = JSON.parse(response);
+                            } catch (e) {
+                                json = response;
+                            }
+                            if (json.error != "ok") {
+
+                                var message =
+                                    '<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">' +
+                                    json.error + '</div>';
+                                $(".mn1_message").html(message);
+                            } else {
+                                $(".mn1_message").html(" ");
+                                $("#mining1_close").trigger("click");
+                                $("#buy_btc_value").html(json.amount);
+                                $(".buynow_currency").html(json.to_currency);
+                                $(".buynow_miner_name").html(type_name);
+                                $(".buynow_wallet").html(json.wallet_address);
+                                $("#buy_last_id").val(json.last_id);
+                                $("#buy_hashcode").val("");
+                                $(".buy_now_message").html(" ");
+                                //                            console.log("Last ID:" + json.last_id);
+                                //                            $("#pay_now_button").attr("href", json.gateway_url);
+                                console.log("ok");
+                                $("#mining2_onclick").trigger("click");
+                            }
+
+                            console.log(json.error);
+                            $("#buy_submit").html('Pay For '+ type_name);
+                        },
+                        error: function(response) {
+                            console.log(response);
+                            $("#buy_submit").html('Pay For '+ type_name);
+                        }
+                    });
+
+                });
+
+            });
+            </script>
+
+        </div>
+
+
+        <div class="modal-general buy_mining_modal2" bis_skin_checked="1" style="display: none;">
+            <button class="modal-close" id="mining2_close">
+                <svg viewBox="0 0 11.58 11.58">
+                    <use xlink:href="#closeIcon"></use>
+                </svg>
+            </button>
+            <form method="post" id="mining_form2">
+
+                <h2 style="text-align:center;">Buy <span class="buynow_miner_name"></span>  With <span class="buynow_currency"></span></h2><br>
+                <!--              <h4 style="text-align:center;"></h4>-->
+
+                <div class="input-holder-byicon">
+                    <label for="de_amount" style="margin-left:10px;color:#696969;text-align:center;">Amount(<span
+                            class="buynow_currency"></span>):</label><br>
+                    <h2 style="margin-left:10px;"><span id="buy_btc_value">0.0988488</span> <span
+                            class="buynow_currency"></span></h2>
+                </div>
+
+                <h4 style="text-align:left;">Please pay exactly the above stated <span class="buynow_currency"></span>
+                    amount to this address: <br><br><span class="buynow_wallet"
+                        style="padding:10px;background-color:#DCDCDC;border-radius:3px"></span></h4>
+                <br><br>
+                <input type="hidden" id="buy_last_id" value="">
+                <h3 style="text-align:center;">Paid?</h3>
+                <div class="input-holder-byicon">
+                    <label for="de_email" style="margin-left:10px;color:#696969">Enter Transaction Hashcode:</label><br>
+                    <input type="text" name="hashcode" id="buy_hashcode" value='' style="font-size: 14px;" autofocus
+                        placeholder="Hashcode">
+                </div><br>
+                <div class="account-modal-bottom"
+                    style="padding: 0 !important; position: relative; margin: 10px auto !important;text-align: center;display: flex;justify-content: center; ">
+                    <a class="btn btn--blue register-btn" style="text-decoration:none" id="buy_hashcode_button">
+                        <span>Submit Hashcode</span>
+                        <div class="spinner" style="display:block">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="account-modal-bottom buy_now_message"
+                    style="padding: 0 !important; position: relative; margin: 40px auto !important;text-align: center;display: flex;justify-content: center; ">
+                </div>
+
+            </form>
+            <script>
+            $(document).ready(function() {
+
+                $("#buy_hashcode_button").click(function(event) {
+                    event.preventDefault();
+                    //                console.log("Hash Button CLicked");
+                    var u_id = <?php
+                                    if (isset($_SESSION['id'])) {
+                                        echo '"' . $_SESSION['id'] . '"';
+                                    }
+                                    ?>;
+                    var payment_id = $("#buy_last_id").val();
+                    var hashcode = $("#buy_hashcode").val();
+                    var hashcode_button = $("#buy_hashcode_button").val();
+
+
+                    $("#buy_hashcode_button").html('<b>....</b>');
+                    $.ajax({
+                        type: "POST",
+                        url: "phpscripts/mining_process.php/",
+                        dataType: "json",
+                        data: {
+
+                            u_id: u_id,
+                            payment_id: payment_id,
+                            hashcode: hashcode,
+                            hashcode_button: hashcode_button
+                        },
+                        success: function(response) {
+                            let json = null;
+                            try {
+                                json = JSON.parse(response);
+                            } catch (e) {
+                                json = response;
+                            }
+                            if (json.error != "ok") {
+
+                                var message =
+                                    '<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">' +
+                                    json.error + '</div>';
+                                $(".buy_now_message").html(message);
+                            } else {
+                                var message =
+                                    '<div class="alert alert-success" style="border-radius:3px;text-align:center;background-color:green;color:#fff;padding:10px 85px;margin-top:0px">Hashcode Sent <br> Hashcode will be verified ASAP. <br> Further Information will be delivered via E-mail</div>';
+                                $(".buy_now_message").html(message);
+
+                                setTimeout(function() {
+                                    $("#mining2_close").trigger("click");
+                                }, 5000);
+
+
+
+                            }
+                            $("#buy_hashcode_button").html('Submit Hashcode');
+                        },
+                        error: function(response) {
+                            console.log(response);
+                            $("#buy_hashcode_button").html('Submit Hashcode');
+                        }
+                    });
+
+                });
+
+            });
+            </script>
+
+        </div>
     </div>
 
     <script src="scripts/jquery-3.2.1.min.js"></script>

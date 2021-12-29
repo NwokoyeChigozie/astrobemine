@@ -598,10 +598,10 @@
              </div>
            </div>
            <div class="text-center">
-             <p class="text-normal ">from $68</p>
+             <p class="text-normal ">$68</p>
              <p class="text-xs mt-0 mb-1">(for 1/100)</p>
-             <button class="text-capitalize buy-btn">buy</button>
-             <p class="text-xs mt-1">Calculate profit</p>
+             <button class="text-capitalize buy-btn" onclick="openModal('account-modal')">buy</button>
+             <!-- <p class="text-xs mt-1">Calculate profit</p> -->
            </div>
          </div>
        </div>
@@ -609,7 +609,7 @@
        <div class="w-85">
          <div class="border-full">
            <div class="text-center">
-             <p class="blue font-bold text-lg">BITMAIN ANTMINER T17+</p>
+             <p class="blue font-bold text-lg">BITMAIN ANTMINER T19</p>
              <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
            </div>
            <div class="my-2">
@@ -627,10 +627,10 @@
              </div>
            </div>
            <div class="text-center">
-             <p class="text-normal ">from $229</p>
+             <p class="text-normal ">$229</p>
              <p class="text-xs mt-0 mb-1">(for 1/100)</p>
-             <button class="text-capitalize buy-btn">buy</button>
-             <p class="text-xs mt-1">Calculate profit</p>
+             <button class="text-capitalize buy-btn" onclick="openModal('account-modal')">buy</button>
+             <!-- <p class="text-xs mt-1">Calculate profit</p> -->
            </div>
          </div>
        </div>
@@ -638,7 +638,7 @@
        <div class="w-85">
          <div class="border-full">
            <div class="text-center">
-             <p class="blue font-bold text-lg">BITMAIN ANTMINER T17+</p>
+             <p class="blue font-bold text-lg">BITMAIN ANTMINER S19</p>
              <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
            </div>
            <div class="my-2">
@@ -656,10 +656,10 @@
              </div>
            </div>
            <div class="text-center">
-             <p class="text-normal ">from $323</p>
+             <p class="text-normal ">$323</p>
              <p class="text-xs mt-0 mb-1">(for 1/100)</p>
-             <button class="text-capitalize buy-btn">buy</button>
-             <p class="text-xs mt-1">Calculate profit</p>
+             <button class="text-capitalize buy-btn" onclick="openModal('account-modal')">buy</button>
+             <!-- <p class="text-xs mt-1">Calculate profit</p> -->
            </div>
          </div>
        </div>
@@ -688,10 +688,10 @@
              </div>
            </div>
            <div class="text-center">
-             <p class="text-normal text-white">from $177</p>
+             <p class="text-normal text-white">$177</p>
              <p class="text-xs mt-0 mb-1 text-white">(for 1/50)</p>
-             <button class="text-capitalize buy-btn blue">buy</button>
-             <p class="text-xs mt-1 text-white">Calculate profit</p>
+             <button class="text-capitalize buy-btn blue" onclick="openModal('account-modal')">buy</button>
+             <!-- <p class="text-xs mt-1 text-white">Calculate profit</p> -->
            </div>
          </div>
        </div>
@@ -699,111 +699,6 @@
      </div>
    </div>
 
-   <style>
-     .tn-atom {
-       color: #303353;
-       font-size: 2vw;
-       font-family: 'Open Sans', Arial, sans-serif;
-       line-height: 1.55;
-       font-weight: 700;
-       background-position: center center;
-       border-color: transparent;
-       border-style: solid;
-       text-align: center;
-       margin-top: 10px;
-       margin-bottom: 0px !important;
-       align-self: center;
-       align-content: center;
-
-     }
-
-     .tn-atomm {
-       color: #303353;
-       font-size: 10px;
-       font-family: 'Open Sans', Arial, sans-serif;
-       line-height: 1.55;
-       font-weight: 400;
-       background-position: center center;
-       border-color: transparent;
-       border-style: solid;
-       margin-top: 0px !important;
-       margin-right: 15%;
-     }
-
-     .mining-card {
-       border-radius: 20px;
-       text-align: center;
-       height: 310px !important;
-       width: 245 !important;
-       background-image: url("https://static.tildacdn.com/tild3235-3430-4233-b339-643030333863/qq2.svg");
-       background-repeat: no-repeat;
-       margin-top: 13px;
-     }
-
-     /* @media (max-width: 767px) {
-           .mcc {
-               font-size: 12px;
-           }
-       } */
-
-     @media (max-width: 435px) {
-       .tn-atom {
-         font-size: 10px;
-       }
-
-       .tn-atomm {
-         font-size: 10px;
-       }
-     }
-
-     @media (min-width: 768) and (max-width: 991) {
-       .tn-atom {
-         margin-right: 30% !important;
-       }
-
-       .tn-atomm {
-         font-size: 30px !important;
-       }
-     }
-   </style>
-   <div class="home-features" style="padding-bottom: 0px">
-     <div class="row">
-       <div class="affiliate-program-title">
-         <h2 style="text-align: center;"> Bitcoin Mining</h2>
-       </div>
-     </div>
-     <div class="container mcc">
-
-       <div class="row">
-         <div class="col-md-3 col-sm-6 col-xs-6 mining-card">
-           <!-- <div class="tn-atom" bis_skin_checked="1">BITMAIN ANTMINER T17+</div>
-                   <div class="tn-atomm" bis_skin_checked="1">(SHA-256)<br></div> -->
-
-           <div class="row tn-atom" style="background-color: #303353;">
-             <p>BITMAIN ANTMINER T17+</p>
-           </div>
-         </div>
-         <div class="col-md-3 col-sm-6  col-xs-6 mining-card">
-           <div class="home-features-item">
-             <!-- <strong>5 TRADING DAYS</strong> -->
-             <!-- <p> We usually process withdrawal requests between 1–3 hours, but it is up to your payment system how long it will take the money to reach the destination as the confirmation on the Blockchain network may vary depending on your wallet provider. </p> -->
-           </div>
-         </div>
-         <div class="col-md-3 col-sm-6  col-xs-6 mining-card">
-           <div class="home-features-item">
-             <!-- <strong>SECURE AND RELIABLE </strong> -->
-             <!-- <p> We usually process withdrawal requests between 1–3 hours, but it is up to your payment system how long it will take the money to reach the destination as the confirmation on the Blockchain network may vary depending on your wallet provider. </p> -->
-           </div>
-         </div>
-         <div class="col-md-3 col-sm-6  col-xs-6 mining-card">
-           <div class="home-features-item">
-             <!-- <strong>SECURE AND RELIABLE </strong> -->
-             <!-- <p> We usually process withdrawal requests between 1–3 hours, but it is up to your payment system how long it will take the money to reach the destination as the confirmation on the Blockchain network may vary depending on your wallet provider. </p> -->
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
    <div class="affiliate-program">
      <div class="container">
        <div class="affiliate-program-title">
