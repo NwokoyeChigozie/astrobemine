@@ -1,6 +1,6 @@
 <?php
 //sql connection
-$link = mysqli_connect("localhost", "astrowgf_astro_adm", "cryptoservice", "astrowgf_astro");
+$link = mysqli_connect("localhost", "astrowgf_astro_adm", "cryptoservice", "astrowgf_metastackmine");
 if(mysqli_connect_error()){
     die('ERROR: Unable to connect:' . mysqli_connect_error());
 }
