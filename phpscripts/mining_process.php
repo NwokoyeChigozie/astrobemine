@@ -30,6 +30,8 @@ include('cryptofunctions.php');
 $amount = $_POST['de_amount'];
 $pay_currency = $_POST['pay_currency'];
 $email = $_POST['de_email'];
+$de_name = $_POST['de_name'];
+$de_address = $_POST['de_address'];
 $u_id = $_POST['u_id'];
 $username = $_POST['username'];
 $type = $_POST['type'];
@@ -76,7 +78,7 @@ if($pay_currency == "BTC"){
 }
     
     
-                $sql= "INSERT INTO `mining_payments`(`u_id`,`username`, `type`,`from_currency`, `entered_amount`,`to_currency`,`amount`,`status`,`type_name`) VALUES ('$u_id','$username','$type','$scurrency','$amount','$pay_currency','$main_amount','initialized','$name')";
+                $sql= "INSERT INTO `mining_payments`(`u_id`,`username`, `type`,`from_currency`, `entered_amount`,`to_currency`,`amount`,`status`,`type_name`,`name`,`address`) VALUES ('$u_id','$username','$type','$scurrency','$amount','$pay_currency','$main_amount','initialized','$name','$de_name','$de_address')";
     
         if(mysqli_query($link, $sql)){
             

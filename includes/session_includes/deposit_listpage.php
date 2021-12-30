@@ -35,7 +35,7 @@ $prods = [];
                                         <table>
                                             <thead>
                                                 <tr class="table100-head">
-                                                    <th style="text-align:center;" class="column1" colspan="3">STANDARD PLAN</th>
+                                                    <th style="text-align:center;" class="column1" colspan="3">RUBY PLAN</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -45,9 +45,9 @@ $prods = [];
 								<td class="column3"> Profit (%)</th>
 						</tr> -->
                                                 <tr>
-                                                    <td class="column1">Plan STANDARD</td>
-                                                    <td class="column2">$100.00 - $5000.00</td>
-                                                    <td class="column3"> Profit 10.00%</td>
+                                                    <td class="column1">Plan RUBY</td>
+                                                    <td class="column2">$100.00 - $999.00</td>
+                                                    <td class="column3"> Profit 3.00%</td>
                                                 </tr>
                                                                                                 
 
@@ -63,7 +63,7 @@ $prods = [];
                                                 }
                                                 if(!empty($basic_prods) && $basic_prods[0] != ''){
                                                     foreach($basic_prods as $prod){
-                                                        $profit = (10/100) * $prod['amount'];
+                                                        $profit = (3/100) * $prod['amount'];
                                                         $profit = normalize_amount($profit);
                                                         ?>
                                                     <tr>
@@ -102,7 +102,7 @@ $prods = [];
                                         <table>
                                             <thead>
                                                 <tr class="table100-head">
-                                                    <th style="text-align:center;" class="column1" colspan="3">PROFESSIONAL PLAN</th>
+                                                    <th style="text-align:center;" class="column1" colspan="3">SILVER PLAN</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -112,9 +112,9 @@ $prods = [];
 								<td class="column3"> Profit (%)</th>
 						</tr> -->
                                                                                                 <tr>
-                                                    <td class="column1">Plan PROFESSIONAL PLAN</td>
-                                                    <td class="column2">$5000.00 - $20000.00</td>
-                                                    <td class="column3"> Profit 30.00%</td>
+                                                    <td class="column1">Plan SILVER PLAN</td>
+                                                    <td class="column2">$1000.00 - $9999.00</td>
+                                                    <td class="column3"> Profit 5.00%</td>
                                                 </tr>
                                                                                                 
 
@@ -131,7 +131,7 @@ $prods = [];
                                                 }
                                                 if(!empty($bronze_prods) && $bronze_prods[0] != ''){
                                                     foreach($bronze_prods as $prod){
-                                                        $profit = (30/100) * $prod['amount'];
+                                                        $profit = (5/100) * $prod['amount'];
                                                         $profit = normalize_amount($profit);
                                                         ?>
                                                     <tr>
@@ -169,7 +169,7 @@ $prods = [];
                                         <table>
                                             <thead>
                                                 <tr class="table100-head">
-                                                    <th style="text-align:center;" class="column1" colspan="3">ADVANCED PLAN</th>
+                                                    <th style="text-align:center;" class="column1" colspan="3">GOLD PLAN</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -179,9 +179,9 @@ $prods = [];
 								<td class="column3"> Profit (%)</th>
 						</tr> -->
                                                                                                 <tr>
-                                                    <td class="column1">Plan ADVANCED PLAN</td>
-                                                    <td class="column2">$10000.00 - Unlimited</td>
-                                                    <td class="column3"> Profit 45.00%</td>
+                                                    <td class="column1">Plan GOLD PLAN</td>
+                                                    <td class="column2">$10000.00 - $29999</td>
+                                                    <td class="column3"> Profit 10.00%</td>
                                                 </tr>
                                                                                                 
 
@@ -198,7 +198,7 @@ $prods = [];
                                                 }
                                                 if(!empty($silver_prods) && $silver_prods[0] != ''){
                                                     foreach($silver_prods as $prod){
-                                                        $profit = (45/100) * $prod['amount'];
+                                                        $profit = (10/100) * $prod['amount'];
                                                         $profit = normalize_amount($profit);
                                                         ?>
                                                     <tr>
@@ -236,7 +236,7 @@ $prods = [];
                                         <table>
                                             <thead>
                                                 <tr class="table100-head">
-                                                    <th style="text-align:center;" class="column1" colspan="3">PREMIUM PLAN</th>
+                                                    <th style="text-align:center;" class="column1" colspan="3">DIAMOND PLAN</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -246,9 +246,9 @@ $prods = [];
 								<td class="column3"> Profit (%)</th>
 						</tr> -->
                                                                                                 <tr>
-                                                    <td class="column1">Plan PREMIUM PLAN</td>
-                                                    <td class="column2">$10000.00 - unlimited</td>
-                                                    <td class="column3"> Profit 15% daily</td>
+                                                    <td class="column1">Plan DIAMOND PLAN</td>
+                                                    <td class="column2">$30000.00 - unlimited</td>
+                                                    <td class="column3"> Profit 15.00%</td>
                                                 </tr>
                                                                                                 
 

@@ -275,7 +275,7 @@
              <p>Within the last 5 years we have become one of the UK’s leading and forex trading company, as
                well as having a worldwide student base. Our performance is measured by the satisfaction of
                clients and can be widely seen online. There are reviews gathered by independent sources
-               about AstroFX that are publicly available. </p>
+               about MetaStackMine that are publicly available. </p>
              <a onclick="openModal('register-modal')" class="btn btn--cta red-gradient" style="cursor: pointer">Get Started Now</a>
            </div>
          </div>
@@ -312,7 +312,7 @@
                  <use xlink:href="#investment-home"></use>
                </svg>
                <strong>SECURE AND RELIABLE </strong>
-               <p> All transactions on AstroFX are secure and encrypted as your safety to us, comes first.
+               <p> All transactions on MetaStackMine are secure and encrypted as your safety to us, comes first.
                  We ensure a strong security on all accounts and when an unsual activity is detected, you
                  will be prompted to do a verification challenge. Verification happens in real time </p>
              </div>
@@ -321,46 +321,25 @@
        </div>
      </div>
 
-     <div class="home-features" style="padding-bottom: 30px">
+     <!-- <div class="home-features" style="padding-bottom: 30px">
        <div class="container">
          <div class="row">
            <div class="col-md-4 col-sm-4 ">
-             <!--
-          <div class="home-features-item bitcoin">
-            <svg viewBox="0 0 51.42 52.83">
-              <use xlink:href="#bitcoin-home"></use>
-            </svg>
-            <strong>INSTANT WITHDRAWALS </strong>
-            <p> We usually process withdrawal requests between 1–3 hours, but it is up to your payment system how long it will take the money to reach the destination as the confirmation on the Blockchain network may vary depending on your wallet provider.   </p>
-          </div>-->
+           
              <video width="320" height="240" controls>
                <source src="https://astroforex.net/styles/img/video8.MP4" type="video/mp4">
                <source src="https://astroforex.net/styles/img/video8.MP4" type="video/ogg">
              </video>
            </div>
            <div class="col-md-4 col-sm-4 ">
-             <!--
-          <div class="home-features-item time">
-            <svg viewBox="0 0 58.58 50.99">
-              <use xlink:href="#time-home"></use>
-            </svg>
-            <strong>5 TRADING DAYS</strong>
-            <p> With 5 trading days in a week (Monday to Friday), our professionals will analyse the market condition to know the profitable hours to enter trades and make great profits and you can stop your investment at any time. </p>
-          </div>-->
+          
              <video width="320" height="240" controls>
                <source src="https://astroforex.net/styles/img/video7.MP4" type="video/mp4">
                <source src="https://astroforex.net/styles/img/video7.MP4" type="video/ogg">
              </video>
            </div>
            <div class="col-md-4 col-sm-4 ">
-             <!--
-          <div class="home-features-item investment">
-            <svg viewBox="0 0 49.05 57.09">
-              <use xlink:href="#investment-home"></use>
-            </svg>
-            <strong>SECURE AND RELIABLE </strong>
-            <p> All transactions on AstroFX are secure and encrypted as your safety to us, comes first. We ensure a strong security on all accounts and when an unsual activity is detected, you will be prompted to do a verification challenge. Verification happens in real time </p>
-          </div>-->
+       
              <video width="320" height="240" controls>
                <source src="https://astroforex.net/styles/img/video3.mp4" type="video/mp4">
                <source src="https://astroforex.net/styles/img/video3.mp4" type="video/ogg">
@@ -368,7 +347,7 @@
            </div>
          </div>
        </div>
-     </div>
+     </div> -->
 
    </header>
 
@@ -379,14 +358,14 @@
            <svg id="profitPercent" viewBox="0 0 213.08 194.03">
              <use xlink:href="#profitPercentHome"></use>
            </svg>
-           <div><strong>15</strong><b>%</b></div>
+           <div><strong>1.5</strong><b>%</b></div>
            <div><span class="profit"></span></div>
-           <div>daily for 6-12 months</div>
+           <div>daily for 10 days</div>
          </div>
          <h2>Profitable Trading Plans</h2>
-         <p class="now-left">Our 15% daily Premium package is recommended for business class and high budget
+         <p class="now-left">Our 15% in 10 days Diamond package is recommended for business class and high budget
            traders as this has a higher lot size and yields more returns as profits. </p>
-         <div class="invest-now"> <a href="?a=cust&page=testimonials" class="btn btn--blue">View Trading Plans</a>
+         <div class="invest-now"> <a href="?a=cust&page=plans" class="btn btn--blue">View Trading Plans</a>
          </div>
        </div>
      </div>
@@ -482,7 +461,7 @@
 
      .my-2 {
        padding-top: 2px;
-       padding-bottom: 2px;
+       padding-bottom: 0px;
      }
 
      .pt-2 {
@@ -580,25 +559,25 @@
        <div class="w-85">
          <div class="border-full">
            <div class="text-center">
-             <p class="blue font-bold text-lg">BITMAIN ANTMINER T17+</p>
+             <p class="blue font-bold text-lg">BITMAIN ANTMINER T19</p>
              <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
            </div>
            <div class="my-2">
              <div class="flex grey-bg rounded-sm mb-2">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-               <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">64 th/s</p>
+               <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">84 th/s</p>
              </div>
              <div class="flex grey-bg rounded-sm mb-2">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-               <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3300w</p>
+               <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3140w</p>
              </div>
-             <div class="flex grey-bg rounded-sm">
+             <!-- <div class="flex grey-bg rounded-sm">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
                <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000408 BTC</p>
-             </div>
+             </div> -->
            </div>
            <div class="text-center">
-             <p class="text-normal ">$68</p>
+             <p class="text-normal ">$10,329</p>
              <p class="text-xs mt-0 mb-1">(for 1/100)</p>
              <button class="text-capitalize buy-btn" onclick="openModal('account-modal')">buy</button>
              <!-- <p class="text-xs mt-1">Calculate profit</p> -->
@@ -615,19 +594,19 @@
            <div class="my-2">
              <div class="flex grey-bg rounded-sm mb-2">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-               <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">84 th/s</p>
+               <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">88 th/s</p>
              </div>
              <div class="flex grey-bg rounded-sm mb-2">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-               <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3150w</p>
+               <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3300w</p>
              </div>
-             <div class="flex grey-bg rounded-sm">
+             <!-- <div class="flex grey-bg rounded-sm">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
                <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000536 BTC</p>
-             </div>
+             </div> -->
            </div>
            <div class="text-center">
-             <p class="text-normal ">$229</p>
+             <p class="text-normal ">$11,200</p>
              <p class="text-xs mt-0 mb-1">(for 1/100)</p>
              <button class="text-capitalize buy-btn" onclick="openModal('account-modal')">buy</button>
              <!-- <p class="text-xs mt-1">Calculate profit</p> -->
@@ -638,7 +617,7 @@
        <div class="w-85">
          <div class="border-full">
            <div class="text-center">
-             <p class="blue font-bold text-lg">BITMAIN ANTMINER S19</p>
+             <p class="blue font-bold text-lg">BITMAIN ANTMINER S19J Pro</p>
              <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
            </div>
            <div class="my-2">
@@ -648,15 +627,15 @@
              </div>
              <div class="flex grey-bg rounded-sm mb-2">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-               <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3500w</p>
+               <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3050w</p>
              </div>
-             <div class="flex grey-bg rounded-sm">
+             <!-- <div class="flex grey-bg rounded-sm">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
                <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000702 BTC</p>
-             </div>
+             </div> -->
            </div>
            <div class="text-center">
-             <p class="text-normal ">$323</p>
+             <p class="text-normal ">$12,525</p>
              <p class="text-xs mt-0 mb-1">(for 1/100)</p>
              <button class="text-capitalize buy-btn" onclick="openModal('account-modal')">buy</button>
              <!-- <p class="text-xs mt-1">Calculate profit</p> -->
@@ -668,7 +647,7 @@
          <div class="border-full blue-bg">
            <div class="text-center">
              <div class="flex-d">
-               <p class="font-bold text-lg text-white">BEMINE OS17+</p>
+               <p class="font-bold text-lg text-white">BITMAIN ANTMINER S19J Pro</p>
                <p class="rounded-full white-bg circle">?</p>
              </div>
              <p class="text-sm mt-0 text-uppercase text-white">(sha-256)</p>
@@ -676,19 +655,19 @@
            <div class="my-2">
              <div class="flex grey-bg rounded-sm mb-2">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-               <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">97 th/s</p>
+               <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">100 th/s</p>
              </div>
              <div class="flex grey-bg rounded-sm mb-2">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-               <p class="white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3100w</p>
+               <p class="white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3250w</p>
              </div>
-             <div class="flex grey-bg rounded-sm">
+             <!-- <div class="flex grey-bg rounded-sm">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
                <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000619 BTC</p>
-             </div>
+             </div> -->
            </div>
            <div class="text-center">
-             <p class="text-normal text-white">$177</p>
+             <p class="text-normal text-white">$14,830</p>
              <p class="text-xs mt-0 mb-1 text-white">(for 1/50)</p>
              <button class="text-capitalize buy-btn blue" onclick="openModal('account-modal')">buy</button>
              <!-- <p class="text-xs mt-1 text-white">Calculate profit</p> -->
@@ -726,7 +705,7 @@
          <div class="row">
            <div class="col-md-2"></div>
            <div class="col-md-8">
-             <p class="now-left">Take advantage of our Invite a Friend Program. AstroFX introduces a new type
+             <p class="now-left">Take advantage of our Invite a Friend Program. MetaStackMine introduces a new type
                of affiliate program oriented at our traders who are willing to invite their friends and get
                rewarded for that. It has never been as simple as now. You don't have to make deposits in
                order to refer your friends anymore. </p>

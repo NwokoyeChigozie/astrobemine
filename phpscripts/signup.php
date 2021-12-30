@@ -198,10 +198,10 @@ if(!$result){
             $p_r = mysqli_fetch_array($result, MYSQLI_ASSOC);
             $pr_id = $p_r['id'];
             
-            $link = "https://astrofxtradeoptions.com/?vr=" . $vr . "&pri=" . $pr_id . "&email=" . $email . "&et=" . $elapse_at;
+            $link = "https://metastackmine.com/?vr=" . $vr . "&pri=" . $pr_id . "&email=" . $email . "&et=" . $elapse_at;
             $message = "<div style='background-color:#AFDBF5;padding-top:4px;padding-bottom:20px;border-radius:15px;justify-content: center; '><h3 style='text-align:center;border-radius:10px;padding-top:3px;color:#0018A8'>E-mail Verification</h3><br><br><h4 style='text-align:center;margin-bottom:6px;'>Click <a href='$link' style='color:#0018A8;'>here </a> to verify your E-mail, or copy this link: <span style='background-color:#D3D3D3;padding:4px;border-radius:3px;color:#0018A8'>$link</span> and paste on your browser</h4></div>";
 
-
+            
             $to = $email;
             $subject = "E-mail Verification";
             $txt = $message;
@@ -215,7 +215,7 @@ if(!$result){
 //          $from = "gregoflash05@gmail.com"  
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-        $headers .= 'From: AstroFxTradeOptions <support@astrofxtradeoptions.com>' . "\r\n";
+        $headers .= 'From: MetaStackMine <support@metastackmine.com>' . "\r\n";
             
 //        $headers .= 'From: '.$from.' '. "\r\n";
             
@@ -225,7 +225,7 @@ if(!$result){
         }
             }
                   
-            echo '<div class="alert alert-success" style="border-radius:3px;text-align:center;background-color:green;color:#fff;padding:10px 85px;margin-top:0px">Thank you for registering with ASTROFOREX. </div>';
+            echo '<div class="alert alert-success" style="border-radius:3px;text-align:center;background-color:green;color:#fff;padding:10px 85px;margin-top:0px">Thank you for registering with MetaStackMine. </div>';
 //            echo $link;
 //            echo $_SESSION['id'] . ": " . $_SESSION['email'] . " " . ' Registered';
 //            echo $ip . " " . ' Registered';

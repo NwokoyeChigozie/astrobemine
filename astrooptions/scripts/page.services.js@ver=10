@@ -1,9 +1,0 @@
-$(document).ready(function () {
-    DoCalculate();
-    $("#txtAmount").bind("keyup blur", function () {
-        DoCalculate();
-    });
-    $(".planRadio").bind("change", function() {
-        DoCalculate();
-    })
-})

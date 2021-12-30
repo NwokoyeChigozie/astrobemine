@@ -384,7 +384,7 @@
         </div>
         <div class="col-md-7 col-sm-7 col-xs-6">
           <h3>Affiliate Program</h3>
-          <p>Take advantage of our Invite a Friend Program. AstroFX introduces a new type of affiliate program oriented at our traders who are willing to invite their friends and get rewarded for that. It has never been as simple as now. You don't have to make deposits in order to refer your friends anymore.</p>
+          <p>Take advantage of our Invite a Friend Program. MetaStackMine introduces a new type of affiliate program oriented at our traders who are willing to invite their friends and get rewarded for that. It has never been as simple as now. You don't have to make deposits in order to refer your friends anymore.</p>
           		  <a onclick="openModal('register-modal')"class="btn red-gradient">Start Earning</a> 
 		  		  </div>
       </div>

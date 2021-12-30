@@ -36,16 +36,10 @@ if (isset($_GET['sr']) && isset($_GET['pri']) && isset($_GET['email']) && isset(
 
 if (isset($_SESSION['id'])) {
     $base_id = $_SESSION['id'];
-    // $plan_duration = array(0, 259200, 432000, 604800, 864000);
-    // //    $plan_percentage = array(0, 0.1,0.3,0.45,0.55);
-    // $plan_percentage = array(0, 0.135, 0.275, 0.483, 0.85);
-    // $part_plan_percentage = array(0, 0.045, 0.055, 0.069, 0.085);
-
-
-    $year_v = 31104000;
-    $plan_duration = array(0, 259200,432000,604800,$year_v);    
-    $plan_percentage = array(0, 0.1,0.3,0.45,22.5);
-    $part_plan_percentage = array(0, 0.033,0.06,0.064,0.15);
+ 
+    $plan_duration = array(0, 86400,259200,432000,864000);    
+    $plan_percentage = array(0, 0.03,0.05,0.1,0.15);
+    $part_plan_percentage = array(0, 0.03,0.0167,0.02,0.015);
 
 
     $depos = [];
@@ -75,9 +69,6 @@ if (isset($_SESSION['id'])) {
 //            $int_day = $int_day / ($plan_duration[$depo_type]/(24 * 3600));
                 
                 $new_total_amount = $depo_amount + ($plan_percentage[$depo_type] * $depo_amount);
-                if($plan_duration[$depo_type] == $year_v){
-                    $new_total_amount = $depo_amount + (($plan_percentage[$depo_type] * $depo_amount)*2);
-                }
                 
                 $sql_t = "UPDATE `deposit_list` SET `total_amount`='$new_total_amount', `last_update_timestamp`='$new_last_update_timestamp' WHERE `id`= '$depo_id'";    
                                         if(mysqli_query($link, $sql_t)){
@@ -283,7 +274,7 @@ if ($result = mysqli_query($link, $sql)) {
     <link rel="stylesheet" href="stylesheets/owl.carousel.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <!-- <link rel="stylesheet" href="stylesheets/translateelement.css"> -->
-    <title>AstroFXC</title>
+    <title>MetaStackMine</title>
     <style>
     .goog-te-combo {
         padding: 2px 10px;
@@ -1353,7 +1344,7 @@ s0.parentNode.insertBefore(s1,s0);
     <?php
     //////////////////////////////////////////////////////////////////////////////////////////////
     $session_pages = array("account", "deposit_history", "deposit_list", "edit_account", "referals", "security", "withdraw", "promotion", "history");
-    $nonsession_pages = array("about", "index", "partnership", "support", "testimonials");
+    $nonsession_pages = array("about", "index", "partnership", "support", "plans");
 
     //            if(isset($_SESSION['id'])){
     //                include_once("includes/session_includes/base.php"); 
@@ -1464,39 +1455,39 @@ s0.parentNode.insertBefore(s1,s0);
           
           -->
                 </div>
-                <div class="col-md-4 col-sm-5 col-xs-6 ">
+                <!-- <div class="col-md-4 col-sm-5 col-xs-6 ">
                     <div class="social-icon">
                         <span>Follow Us</span>
-                        <a id="facebook" href="https://www.facebook.com/astrofxc/">
+                        <a id="facebook" href="https://www.facebook.com/metastackmine/">
                             <svg viewBox="0 0 169.17 169.17">
                                 <use xlink:href="#facebook"></use>
                             </svg>
                         </a>
-                        <a id="twitter" href="https://twitter.com/AstroForexpro">
+                        <a id="twitter" href="https://twitter.com/metastackmine">
                             <svg viewBox="0 0 203.24 169.06">
                                 <use xlink:href="#twitter"></use>
                             </svg>
                         </a>
-                        <a id="youtube" href="https://www.youtube.com/user/ReclaimReality">
+                        <a id="youtube" href="https://www.youtube.com/user/metastackmine">
                             <svg viewBox="0 0 238.91 169.06">
                                 <use xlink:href="#youtube"></use>
                             </svg>
                         </a>
-                        <a id="instagram" href="https://www.instagram.com/astroforex/">
+                        <a id="instagram" href="https://www.instagram.com/metastackmine/">
                             <svg viewBox="0 0 169.06 169.06">
                                 <use xlink:href="#instagram"></use>
                             </svg>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="copyright"> <span style="color: #dae7ed;font-size: 10px;">249 GROSVENOR STREET, MAYFAIR, LONDON,
                     ENGLAND, W1K 3HP
                     <br>
                     <a target="_blank"
-                        href="https://find-and-update.company-information.service.gov.uk/company/08939022">AstroFXC,
+                        href="https://find-and-update.company-information.service.gov.uk/company/08939022">MetaStackMine,
                         08939022</a> </span> <br>
-                <p>© 2017 AstroFXC Limited. All Rights Reserved. </p>
+                <p>© 2017 MetaStackMine Limited. All Rights Reserved. </p>
             </div>
         </div>
     </div>
@@ -1516,7 +1507,7 @@ s0.parentNode.insertBefore(s1,s0);
         <ul class="menuList">
             <li><a href="?a=cust&amp;page=about">About Us</a></li>
             <!--<li><a href="?a=cust&amp;page=guide">How It Works</a></li>-->
-            <li><a href="?a=cust&amp;page=testimonials">Testimonials</a></li>
+            <li><a href="?a=cust&amp;page=plans">Plans</a></li>
             <li><a href="?a=cust&amp;page=partnership">Invite a Friend</a></li>
             <!--
     <li><a href="?a=news">Blog</a></li> -->
@@ -2724,7 +2715,7 @@ s0.parentNode.insertBefore(s1,s0);
             <form method="post" id="deposit_form1">
 
                 <h2 style="text-align:center;">Pay With BTC/ETH</h2>
-                <h4 style="text-align:center;">to AstroForex</h4>
+                <h4 style="text-align:center;">to MetaStackMine</h4>
 
                 <div class="input-holder-byicon">
                     <label for="de_amount" style="margin-left:10px;color:#696969">Amount($):</label><br>
@@ -2750,7 +2741,7 @@ s0.parentNode.insertBefore(s1,s0);
                 <div class="account-modal-bottom"
                     style="padding: 0 !important; position: relative; margin: 40px auto !important;text-align: center;display: flex;justify-content: center; ">
                     <button class="btn btn--blue register-btn" style="text-decoration:none" id="de_submit"> <span>Pay to
-                            AstroForex</span>
+                            MetaStackMine</span>
                         <div class="spinner" style="display:block">
                             <div class="bounce1"></div>
                             <div class="bounce2"></div>
@@ -2832,11 +2823,11 @@ s0.parentNode.insertBefore(s1,s0);
                             }
 
                             console.log(json.error);
-                            $("#de_submit").html('Pay to AstroForex');
+                            $("#de_submit").html('Pay to MetaStackMine');
                         },
                         error: function(response) {
                             console.log(response);
-                            $("#de_submit").html('Pay to AstroForex');
+                            $("#de_submit").html('Pay to MetaStackMine');
                         }
                     });
 
@@ -2854,7 +2845,7 @@ s0.parentNode.insertBefore(s1,s0);
             </button>
             <form method="post" id="deposit_form2">
 
-                <h2 style="text-align:center;">Pay With <span class="paynow_currency"></span> to AstroForex</h2><br>
+                <h2 style="text-align:center;">Pay With <span class="paynow_currency"></span> to MetaStackMine</h2><br>
                 <!--              <h4 style="text-align:center;"></h4>-->
 
                 <div class="input-holder-byicon">
@@ -2968,7 +2959,7 @@ s0.parentNode.insertBefore(s1,s0);
             <form method="post" id="mining_form1">
 
                 <h2 style="text-align:center;">Buy <span class="miner-name-span"></span> With BTC/ETH</h2>
-                <h4 style="text-align:center;">to AstroForex</h4>
+                <!-- <h4 style="text-align:center;">to MetaStackMine</h4> -->
                 <input type="hidden" value="" id="miner-price">
                 <input type="hidden" value="" id="miner-name">
                 <div class="input-holder-byicon">
@@ -2986,9 +2977,19 @@ s0.parentNode.insertBefore(s1,s0);
                     </select>
                 </div><br>
                 <div class="input-holder-byicon">
+                    <label for="de_email" style="margin-left:10px;color:#696969">Enter Your Name</label><br>
+                    <input type="text"  id="buy_name" value='' style="font-size: 14px;" autofocus
+                        placeholder="Name">
+                </div><br>
+                <div class="input-holder-byicon">
                     <label for="de_email" style="margin-left:10px;color:#696969">Enter E-mail: NB(will be used to receive further information after payment confirmation)</label><br>
                     <input type="text"  id="buy_email" value='' style="font-size: 14px;" autofocus
                         placeholder="E-mail">
+                </div><br>
+                <div class="input-holder-byicon">
+                    <label for="de_email" style="margin-left:10px;color:#696969">Enter Your Address</label><br>
+                    <input type="text"  id="buy_address" value='' style="font-size: 14px;" autofocus
+                        placeholder="Address">
                 </div>
 
 
@@ -3036,6 +3037,8 @@ s0.parentNode.insertBefore(s1,s0);
                                         ?>;
                     var de_amount = $("#miner-price").val();
                     var de_email = $("#buy_email").val();
+                    var de_name = $("#buy_name").val();
+                    var de_address = $("#buy_address").val();
                     var pay_currency = $("#buy_currency").val();
                     //                var type = $("input[name='h_id']:checked").val();
                     var type_r = "BTC Mining";
@@ -3057,6 +3060,8 @@ s0.parentNode.insertBefore(s1,s0);
                             de_amount: de_amount,
                             pay_currency: pay_currency,
                             de_email: de_email,
+                            de_name: de_name,
+                            de_address: de_address,
                             type: type_r,
                             name: type_name,
                             buy_submit: buy_submit

@@ -51,8 +51,8 @@
                 <svg class="plus-icon" viewBox="0 0 10.38 10.38">
                   <use xlink:href="#plusIcon"></use>
                 </svg>
-                </span> <strong>Who is AstroFXC?</strong> </div>
-              <div class="question-item__answer" style="display: block;"> AstroFX Limited is a renowned broker and we pride in being the best in the industry. We’re here to help Forex traders find the best trading conditions in the Forex market.<br>
+                </span> <strong>Who is MetaStackMine?</strong> </div>
+              <div class="question-item__answer" style="display: block;"> MetaStackMine Limited is a renowned broker and we pride in being the best in the industry. We’re here to help Forex traders find the best trading conditions in the Forex market.<br>
                 We work tirelessly to ensure that every trader's investment brings about steady return. </div>
             </div>
             <div class="question-item">
@@ -63,8 +63,8 @@
                 <svg class="plus-icon" viewBox="0 0 10.38 10.38">
                   <use xlink:href="#plusIcon"></use>
                 </svg>
-                </span> <strong>Is AstroFXC regulated?</strong> </div>
-              <div class="question-item__answer"> Yes, AstroFX is a regulated broker. A trustworthy broker properly regulated by the major authorities. This includes a license of the British Financial Conduct Authority (FCA). <br>
+                </span> <strong>Is MetaStackMine regulated?</strong> </div>
+              <div class="question-item__answer"> Yes, MetaStackMine is a regulated broker. A trustworthy broker properly regulated by the major authorities. This includes a license of the British Financial Conduct Authority (FCA). <br>
                  </div>
             </div>
             <div class="question-item">
@@ -75,7 +75,7 @@
                 <svg class="plus-icon" viewBox="0 0 10.38 10.38">
                   <use xlink:href="#plusIcon"></use>
                 </svg>
-                </span> <strong>How safe are the investment plans offered by AstroFX Limited?</strong> </div>
+                </span> <strong>How safe are the investment plans offered by MetaStackMine Limited?</strong> </div>
               <div class="question-item__answer"> We have selected a couple of professionals that were handpicked and vetted in order to ensure that our investors get good returns on their investments. </div>
             </div>
             <div class="question-item">
@@ -86,7 +86,7 @@
                 <svg class="plus-icon" viewBox="0 0 10.38 10.38">
                   <use xlink:href="#plusIcon"></use>
                 </svg>
-                </span> <strong>How long will AstroFX investment program stay active?</strong> </div>
+                </span> <strong>How long will MetaStackMine investment program stay active?</strong> </div>
               <div class="question-item__answer"> We provide a lifetime investment program with long term business strategy
                 regulated and approved by the UK government. </div>
             </div>
@@ -98,7 +98,7 @@
                 <svg class="plus-icon" viewBox="0 0 10.38 10.38">
                   <use xlink:href="#plusIcon"></use>
                 </svg>
-                </span> <strong>Does AstroFX offer any other website or investment program?</strong> </div>
+                </span> <strong>Does MetaStackMine offer any other website or investment program?</strong> </div>
               <div class="question-item__answer"> Yes, we have a self trading and copytrading platform but the assistance trading is only available on https://astroforex.net/</div>
             </div>
             <div class="question-item">
@@ -160,7 +160,7 @@
                   <use xlink:href="#plusIcon"></use>
                 </svg>
                 </span> <strong>What is your investment package period? </strong> </div>
-              <div class="question-item__answer"> AstroFX offers lifetime investment plans. There is no time limit on investment
+              <div class="question-item__answer"> MetaStackMine offers lifetime investment plans. There is no time limit on investment
                 program.<br>
                 The system is fully automated and the investment has no time period until you
                 decide to stop your investment by releasing funds.<br>
@@ -313,7 +313,7 @@
                   <use xlink:href="#plusIcon"></use>
                 </svg>
                 </span> <strong>What is Two-Factor Authentication?</strong> </div>
-              <div class="question-item__answer" style="display: block;"> Two-factor authentication provides an additional layer of security to your AstroFX
+              <div class="question-item__answer" style="display: block;"> Two-factor authentication provides an additional layer of security to your MetaStackMine
                 account. It requires an extra step during the login process. It is an optional
                 feature that you can add to your account authentication process. </div>
             </div>
@@ -397,7 +397,7 @@
                 <svg class="plus-icon" viewBox="0 0 10.38 10.38">
                   <use xlink:href="#plusIcon"></use>
                 </svg>
-                </span> <strong>How can I deposit to AstroFX?</strong> </div>
+                </span> <strong>How can I deposit to MetaStackMine?</strong> </div>
               <div class="question-item__answer" style="display: block;"> To make a deposit:<br>
                 1) First of all you need to create an account, <br>
                 2) Then login to your account, <br>
@@ -456,7 +456,7 @@
                 <svg class="plus-icon" viewBox="0 0 10.38 10.38">
                   <use xlink:href="#plusIcon"></use>
                 </svg>
-                </span> <strong>How can AstroFX distinguish my deposit from other traders investment?</strong> </div>
+                </span> <strong>How can MetaStackMine distinguish my deposit from other traders investment?</strong> </div>
               <div class="question-item__answer"> The Bitcoin / Ethereum address provided by the website in deposit section is unique
                 for your account and all the transactions to that particular address will be
                 considered as your investment, therefore you are able to make multiple deposits and
@@ -523,7 +523,7 @@
                 You need to specify the amount that you want to withdraw and you would need to set
                 your Bitcoin / Ethereum Address to make withdrawal for the first time, click on
                 proceed.<br>
-                AstroFX utilizes an instant payment system, your Bitcoin / Ethereum will be released
+                MetaStackMine utilizes an instant payment system, your Bitcoin / Ethereum will be released
                 to your address as you complete the request. </div>
             </div>
             <div class="question-item">
@@ -536,7 +536,7 @@
                 </svg>
                 </span> <strong>After I make a withdrawal request, when will the funds be available on my
                 Bitcoin / Ethereum wallet?</strong> </div>
-              <div class="question-item__answer"> AstroFX utilizes an instant payment system, your Bitcoin / Ethereum will be released
+              <div class="question-item__answer"> MetaStackMine utilizes an instant payment system, your Bitcoin / Ethereum will be released
                 to your account as you complete the request within 1-3 hours and the funds will be credited to your
                 address once the transaction is confirmed on its network. </div>
             </div>
@@ -625,7 +625,7 @@
                 investments that your First Level Downlines make, you need to visit My Referrals on
                 your Dashboard, you will find Your Referrals Links and Marketing Banner provided to
                 build your Network. You need to share your link within your community and have them
-                registered on AstroFX with your referral link to gain referral commissions. </div>
+                registered on MetaStackMine with your referral link to gain referral commissions. </div>
             </div>
             <div class="question-item">
               <div class="question-item__title"> <span class="question-item__toggle">

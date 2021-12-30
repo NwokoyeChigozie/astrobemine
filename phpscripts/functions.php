@@ -69,7 +69,7 @@ function normalize_amount($input){
 function create_reflink($username){
       $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://"; 
     if($_SERVER['HTTP_HOST'] == "localhost"){
-       $pref =  $protocol . $_SERVER['HTTP_HOST'] . "/astroforex/?ref=" . $username;
+       $pref =  $protocol . $_SERVER['HTTP_HOST'] . "/astrobemine/?ref=" . $username;
         
     }else{
        $pref =  $protocol . $_SERVER['HTTP_HOST'] . "?ref=" . $username; 

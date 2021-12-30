@@ -9,7 +9,6 @@
                 My Referrals             </div>
             <div class="referrals-link">
                 <div class="input-bylabel">
-<!--                    <span>http://astroforex.net/?ref=Greg</span>-->
                     <span><?php echo create_reflink($m_username); ?></span>
                     <label>Your Referral Link:</label>
                 </div>

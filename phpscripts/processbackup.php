@@ -31,7 +31,7 @@ $request = [
     'currency1' => $scurrency,
     'currency2' => $rcurrency,
     'buyer_email' => $email,
-    'item' => "Investment in AstroForex",
+    'item' => "Investment in MetaStackMine",
     'address' => "",
     'ipn_url' => $ipn_urlm
 ];

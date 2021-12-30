@@ -193,10 +193,10 @@ include("../../phpscripts/connection.php");
                   <tr>
 
                   <th style="width: 8%">
-                          ID
+                          Username
                       </th>
                       <th style="width: 10%">
-                         Username
+                         Name
                       </th>
                       <th style="width: 12%">
                          Miner Type
@@ -207,13 +207,16 @@ include("../../phpscripts/connection.php");
                       <th style="width: 8%">
                          Amount(BTC/ETH)
                       </th>
-                      <th style="width: 13%">
+                      <th style="width: 10%">
                          Hashcode
                       </th>
-                      <th style="width: 16%" class="text-center">
+                      <th style="width: 12%" class="text-center">
+                          Address
+                      </th>
+                      <th style="width: 8%" class="text-center">
                           Status
                       </th>
-                      <th style="width: 15%" class="text-center">
+                      <th style="width: 14%" class="text-center">
                       </th>
                       <a class='btn btn-info btn-sm' href='payments_completed.php' style="float:right;margin-right:10px;margin-top:20px">
                               Completed Payments
@@ -231,6 +234,8 @@ if(isset($_GET['p'])){
                    $payment_id = $row['id']; 
                    $payment_u_id = $row['u_id']; 
                    $payment_username = $row['username']; 
+                   $payment_name = $row['name']; 
+                   $payment_address = $row['address']; 
                    $payment_type = $row['type']; 
                    $payment_type_name = $row['type_name'];
                    $payment_from_currency = $row['from_currency']; 
@@ -279,12 +284,13 @@ if(isset($_GET['p'])){
                     if($payment_status == "completed" || $payment_status == "error"){
                                            echo " <tr style='background-color:$color !important'>";
                                            echo "
-                                           <td>$payment_id</td>
                                            <td>$payment_username</td>
+                                           <td>$payment_name</td>
                                            <td>$payment_type_name</td>
                                            <td>$payment_entered_amount ($payment_from_currency)</td>
                                            <td>$payment_amount ($payment_to_currency)</td>
                                             <td style='max-width:150px;font-size:14px !important;'>$hashcode</td>
+                                            <td style='max-width:150px;font-size:14px !important;'>$payment_address</td>
                                            <td style='font-size:13px !important;' colspan='$colspan'>$ech_status</td>";     
                                            if($payment_status == "pending" || $payment_status == "completed"){
                                                echo $m_b;
@@ -303,6 +309,8 @@ if(isset($_GET['p'])){
                    $payment_id = $row['id']; 
                    $payment_u_id = $row['u_id']; 
                    $payment_username = $row['username']; 
+                   $payment_name = $row['name']; 
+                   $payment_address = $row['address']; 
                    $payment_type = $row['type']; 
                    $payment_type_name = $row['type_name'];
                    $payment_from_currency = $row['from_currency']; 
@@ -351,12 +359,13 @@ if(isset($_GET['p'])){
                     if($payment_status == "completed" || $payment_status == "error"){
                                            echo " <tr style='background-color:$color !important'>";
                                            echo "
-                                           <td>$payment_id</td>
                                            <td>$payment_username</td>
+                                           <td>$payment_name</td>
                                            <td>$payment_type_name</td>
                                            <td>$payment_entered_amount ($payment_from_currency)</td>
                                            <td>$payment_amount ($payment_to_currency)</td>
                                             <td style='max-width:150px;font-size:14px !important;'>$hashcode</td>
+                                            <td style='max-width:150px;font-size:14px !important;'>$payment_address</td>
                                            <td style='font-size:13px !important;' colspan='$colspan'>$ech_status</td>";     
                                            if($payment_status == "pending" || $payment_status == "completed" || $payment_status == "initialized"){
                                                echo $m_b;

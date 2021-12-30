@@ -122,16 +122,16 @@
           <h4 style="text-transform: uppercase; margin-bottom: 10px;">Select Your Investment Plan</h4>
           <div class="select-plan"> <input type="hidden" class="plantyper" value="1">
             <input type="radio" name="h_id" value="1" class="plantyper planRadio planyx" id="plan-1" checked="">
-            <label for="plan-1" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>10.00%</b> Profit <span>In 3 Day(s)</span>
+            <label for="plan-1" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>3.00%</b> Profit <span>In 1 Day(s)</span>
             </label> <input type="hidden" class="plantyper" value="2">
             <input type="radio" name="h_id" value="2" class="plantyper planRadio planyx" id="plan-2">
-            <label for="plan-2" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>30.00%</b> Profit <span>In 5 Day(s)</span>
+            <label for="plan-2" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>5.00%</b> Profit <span>In 3 Day(s)</span>
             </label> <input type="hidden" class="plantyper" value="3">
             <input type="radio" name="h_id" value="3" class="plantyper planRadio planyx" id="plan-3">
-            <label for="plan-3" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>45.00%</b> Profit <span>In 7 Day(s)</span>
+            <label for="plan-3" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>10.00%</b> Profit <span>In 5 Day(s)</span>
             </label> <input type="hidden" class="plantyper" value="4">
             <input type="radio" name="h_id" value="4" class="plantyper planRadio planyx" id="plan-4">
-            <label for="plan-4" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>15.00%</b> Profit daily <span>For 6-12months(s)</span>
+            <label for="plan-4" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>15.00%</b> Profit daily <span>In 10 Day(s)</span>
             </label>
           </div>
           <div class="float-profit-svg dashboard">
@@ -260,29 +260,29 @@
     <div class="w-85">
       <div class="border-full">
         <div class="text-center">
-          <p class="blue font-bold text-lg">BITMAIN ANTMINER T17+</p>
+          <p class="blue font-bold text-lg">BITMAIN ANTMINER T19</p>
           <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
         </div>
         <div class="my-2">
           <div class="flex grey-bg rounded-sm mb-2">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">64 th/s</p>
+            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">84 th/s</p>
           </div>
           <div class="flex grey-bg rounded-sm mb-2">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3300w</p>
+            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3140w</p>
           </div>
-          <div class="flex grey-bg rounded-sm">
+          <!-- <div class="flex grey-bg rounded-sm">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
             <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000408 BTC</p>
-          </div>
+          </div> -->
         </div>
         <div class="text-center price-section">
-          <p class="text-normal ">$68</p>
+          <p class="text-normal ">$10,329</p>
           <!-- <p class="text-xs mt-0 mb-1">(for 1/100)</p> -->
           <button class="text-capitalize buy-btn buy-btn2">buy</button>
-          <input class="buy-price" type="hidden" value='68'>
-          <input class="buy-name" type="hidden" value='BITMAIN ANTMINER T17+'>
+          <input class="buy-price" type="hidden" value='10329'>
+          <input class="buy-name" type="hidden" value='BITMAIN ANTMINER T19'>
           <!-- <p class="text-xs mt-1">Calculate profit</p> -->
         </div>
       </div>
@@ -303,23 +303,23 @@
         <div class="my-2">
           <div class="flex grey-bg rounded-sm mb-2">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">84 th/s</p>
+            <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">88 th/s</p>
           </div>
           <div class="flex grey-bg rounded-sm mb-2">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3150w</p>
+            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3300w</p>
           </div>
-          <div class="flex grey-bg rounded-sm">
+          <!-- <div class="flex grey-bg rounded-sm">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
             <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000536 BTC</p>
-          </div>
+          </div> -->
         </div>
         <div class="text-center price-section">
-          <p class="text-normal ">from $229</p>
+          <p class="text-normal ">$11,200</p>
           <!-- <p class="text-xs mt-0 mb-1">(for 1/100)</p> -->
           <button class="text-capitalize buy-btn buy-btn2">buy</button>
           <!-- <p class="text-xs mt-1">Calculate profit</p> -->
-          <input class="buy-price" type="hidden" value='229'>
+          <input class="buy-price" type="hidden" value='11200'>
           <input class="buy-name" type="hidden" value='BITMAIN ANTMINER T19'>
         </div>
       </div>
@@ -328,7 +328,7 @@
     <div class="w-85">
       <div class="border-full">
         <div class="text-center">
-          <p class="blue font-bold text-lg">BITMAIN ANTMINER S19</p>
+          <p class="blue font-bold text-lg">BITMAIN ANTMINER S19J Pro</p>
           <p class="text-sm mt-0 text-uppercase">(sha-256)</p>
         </div>
         <div class="my-2">
@@ -338,20 +338,20 @@
           </div>
           <div class="flex grey-bg rounded-sm mb-2">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3500w</p>
+            <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3050w</p>
           </div>
-          <div class="flex grey-bg rounded-sm">
+          <!-- <div class="flex grey-bg rounded-sm">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
             <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000702 BTC</p>
-          </div>
+          </div> -->
         </div>
         <div class="text-center price-section">
-          <p class="text-normal ">from $323</p>
+          <p class="text-normal ">$12,525</p>
           <!-- <p class="text-xs mt-0 mb-1">(for 1/100)</p> -->
           <button class="text-capitalize buy-btn buy-btn2">buy</button>
           <!-- <p class="text-xs mt-1">Calculate profit</p> -->
-          <input class="buy-price" type="hidden" value='323'>
-          <input class="buy-name" type="hidden" value='BITMAIN ANTMINER S19'>
+          <input class="buy-price" type="hidden" value='12525'>
+          <input class="buy-name" type="hidden" value='BITMAIN ANTMINER S19J Pro'>
         </div>
       </div>
     </div>
@@ -360,7 +360,7 @@
       <div class="border-full blue-bg">
         <div class="text-center">
           <div class="flex-d">
-            <p class="font-bold text-lg text-white">BEMINE OS17+</p>
+            <p class="font-bold text-lg text-white">BITMAIN ANTMINER S19J Pro</p>
             <p class="rounded-full white-bg circle">?</p>
           </div>
           <p class="text-sm mt-0 text-uppercase text-white">(sha-256)</p>
@@ -368,24 +368,24 @@
         <div class="my-2">
           <div class="flex grey-bg rounded-sm mb-2">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">hashrate</p>
-            <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">97 th/s</p>
+            <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">100 th/s</p>
           </div>
           <div class="flex grey-bg rounded-sm mb-2">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
-            <p class="white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3100w</p>
+            <p class="white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3250w</p>
           </div>
-          <div class="flex grey-bg rounded-sm">
+          <!-- <div class="flex grey-bg rounded-sm">
             <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
             <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000619 BTC</p>
-          </div>
+          </div> -->
         </div>
         <div class="text-center price-section">
-          <p class="text-normal text-white">from $177</p>
+          <p class="text-normal text-white">$14,830</p>
           <!-- <p class="text-xs mt-0 mb-1 text-white">(for 1/50)</p> -->
           <button class="text-capitalize buy-btn blue buy-btn2" >buy</button>
           <!-- <p class="text-xs mt-1 text-white">Calculate profit</p> -->
-          <input class="buy-price" type="hidden" value='177'>
-          <input class="buy-name" type="hidden" value='BEMINE OS17+'>
+          <input class="buy-price" type="hidden" value='14830'>
+          <input class="buy-name" type="hidden" value='BITMAIN ANTMINER S19J Pro'>
         </div>
       </div>
     </div>
@@ -490,7 +490,7 @@
 
   .my-2 {
     padding-top: 2px;
-    padding-bottom: 2px;
+    padding-bottom: 0px;
   }
 
   .pt-2 {
@@ -591,7 +591,7 @@
     <ul class="menuList">
       <li><a href="./?a=cust&amp;page=about">About Us</a></li>
       <!--<li><a href="./?a=cust&amp;page=guide">How It Works</a></li>-->
-      <li><a href="./?a=cust&amp;page=testimonials">Testimonials</a></li>
+      <li><a href="./?a=cust&amp;page=plans">Plans</a></li>
       <li><a href="./?a=cust&amp;page=partnership">Invite a Friend</a></li>
       <!--
     <li><a href="./?a=news">Blog</a></li> -->
@@ -665,29 +665,23 @@
         type = $("input[name='h_id']:checked").val();
         console.log('Type: ' + type);
         if (d_am < 100) {
-          $('.de_message').html('<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">Minimum amount is $200</div>');
+          $('.de_message').html('<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">Minimum amount is $100</div>');
         } else {
           if (type == "1" && d_am < 100) {
             $('.de_message').html('<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">Minimum amount for this plan is $100</div>');
-          } else if (type == "2" && d_am < 5000) {
-            $('.de_message').html('<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">Minimum amount for this plan is $5000</div>');
+          } else if (type == "2" && d_am < 1000) {
+            $('.de_message').html('<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">Minimum amount for this plan is $1000</div>');
           } else if (type == "3" && d_am < 10000) {
             $('.de_message').html('<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">Minimum amount for this plan is $10000</div>');
-          } else if (type == "4" && d_am < 1000) {
-            $('.de_message').html('<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">Minimum amount for this plan is $1000</div>');
+          } else if (type == "4" && d_am < 30000) {
+            $('.de_message').html('<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:#E23D28;color:#fff;padding:10px 85px;margin-top:0px">Minimum amount for this plan is $30000</div>');
           } else {
-            //                        if(d_am > 999){
-            //                           type = "2"; 
-            //                        }else if(d_am > 4999){
-            //                           type = "3";      
-            //                        }else if(d_am > 9999){
-            //                           type = "4";      
-            //                        }
-
-            if (type == "1" && d_am > 4999) {
-              type = "2";
-            } else if (type == "2" && d_am > 9999) {
-              type = "3";
+            if(d_am > 999){
+              type = "2"; 
+            }else if(d_am > 9999){
+              type = "3";      
+            }else if(d_am > 29999){
+              type = "4";      
             }
 
             $('#de_amount').attr('value', d_am)

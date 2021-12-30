@@ -208,10 +208,10 @@ include("../../phpscripts/connection.php");
                 <label for="inputSpentBudget">Plan</label><br>
                 <select name="u_plan" id="u_plan" class="form-control" style="width:auto">
                     <option value="">Select Plan</option>
-                    <option value="1">STANDARD Plan</option>
-                    <option value="2">PROFESSIONAL Plan</option>
-                    <option value="3">ADVANCED PLan</option>
-                    <option value="4">PREMIUM Plan</option>
+                    <option value="1">RUBY Plan</option>
+                    <option value="2">SILVER Plan</option>
+                    <option value="3">GOLD PLan</option>
+                    <option value="4">DIAMOND Plan</option>
                   </select>
               </div>
                 <label>Payment Date</label>

@@ -19,7 +19,7 @@ function edie($error_msg)
 //          $from = "gregoflash05@gmail.com"  
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-        $headers .= 'From: Error Report <support@astroforextrading.com>' . "\r\n";
+        $headers .= 'From: Error Report <support@metastackmine.com>' . "\r\n";
     
     if(mail($debug_email, "Payment Error", $report,$headers)){
         die($error_msg);
