@@ -270,7 +270,7 @@
        <div class="container">
          <div class="row">
            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6">
-             <h1><span> Stacking ◦ </span><br></h1>
+             <h1><span> Staking ◦ </span><br></h1>
              <p>Staking is the process of actively participating in transaction validation (similar to mining) on a proof-of-stake (PoS) blockchain. 
                On these blockchains, anyone with a minimum-required balance of a specific cryptocurrency can validate transactions and earn Staking rewards. 
                Generate regular passive income without the hassle of jumping into risky positions or need to obtain in-depth technical knowledge.</p>
