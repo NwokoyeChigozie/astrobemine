@@ -1,1 +1,1 @@
-# MetaStackMine
+# MetaStack

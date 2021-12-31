@@ -1,37 +1,37 @@
--- CREATE TABLE `admin` (
---     `id` INT NOT NULL AUTO_INCREMENT,
---     `username` VARCHAR(100) NOT NULL DEFAULT '',
---     `password` VARCHAR(100) NOT NULL DEFAULT '',
---     `support_email` VARCHAR(300) NOT NULL DEFAULT '',
---     `support_phone` VARCHAR(300) NOT NULL DEFAULT '',
---     `minimum_amount` VARCHAR(100) NOT NULL DEFAULT '',
---     `bitcoin_address` VARCHAR(100) NOT NULL DEFAULT '',
---     `ethereum_address` VARCHAR(100) NOT NULL DEFAULT '',
---     PRIMARY KEY (`id`)
--- ) ENGINE = InnoDB;
+CREATE TABLE `admin` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `username` VARCHAR(100) NOT NULL DEFAULT '',
+    `password` VARCHAR(100) NOT NULL DEFAULT '',
+    `support_email` VARCHAR(300) NOT NULL DEFAULT '',
+    `support_phone` VARCHAR(300) NOT NULL DEFAULT '',
+    `minimum_amount` VARCHAR(100) NOT NULL DEFAULT '',
+    `bitcoin_address` VARCHAR(100) NOT NULL DEFAULT '',
+    `ethereum_address` VARCHAR(100) NOT NULL DEFAULT '',
+    PRIMARY KEY (`id`)
+) ENGINE = InnoDB;
 
--- INSERT INTO
---     `admin` (
---         `id`,
---         `username`,
---         `password`,
---         `support_email`,
---         `minimum_amount`,
---         `bitcoin_address`,
---         `ethereum_address`,
---         `support_phone`
---     )
--- VALUES
---     (
---         '1',
---         'metastackadmin',
---         '977302936afc03b7637c7e0acd6273fd80a9898e01733251fa589d058206ee88',
---         'support@metastackmine.com',
---         '20',
---         'btc-infinspfinsif',
---         'eth-sufbuosbfousjbfoujs',
---         '+1 (913) 276-0376'
---     );
+INSERT INTO
+    `admin` (
+        `id`,
+        `username`,
+        `password`,
+        `support_email`,
+        `minimum_amount`,
+        `bitcoin_address`,
+        `ethereum_address`,
+        `support_phone`
+    )
+VALUES
+    (
+        '1',
+        'metastackadmin',
+        '977302936afc03b7637c7e0acd6273fd80a9898e01733251fa589d058206ee88',
+        'support@meta-stack.io',
+        '20',
+        'btc-infinspfinsif',
+        'eth-sufbuosbfousjbfoujs',
+        '+1 (913) 276-0376'
+    );
 
 CREATE TABLE `admin` (
     `id` INT NOT NULL AUTO_INCREMENT,
@@ -69,7 +69,7 @@ VALUES
         '1',
         'metastackadmin',
         '977302936afc03b7637c7e0acd6273fd80a9898e01733251fa589d058206ee88',
-        'support@metastackmine.com',
+        'support@meta-stack.io',
         '20',
         '+1 (765)Â 325-5529',
         '1CcXysaicrBmGbP7u2JZPGKdndbLB452jk',

@@ -1,5 +1,5 @@
 <div class="col-lg-2 col-md-2 col-xs-6"> <a href="./" class="header-logo">
-    <div><img class="logo-image" src="images/logo.png" alt="MetaStackMine"></div> <span>MetaStackMine</span>
+    <div><img class="logo-image" src="images/logo.png" alt="MetaStack"></div> <span>MetaStack</span>
   </a>
   <span id="google_translate_element"></span>
 </div>

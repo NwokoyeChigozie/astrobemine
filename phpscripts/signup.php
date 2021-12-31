@@ -167,7 +167,7 @@ if($count >= 1){
 //            $registered_at = date("F d, Y h:i:s", time());
             $registered_at = date("M-d-Y h:i:s A", time());
     
-                $sql= "INSERT INTO `users`(`ref`,`full_name`, `username`,`email`, `phone`,`password`,`login_count`, `ip_address`,`account_status`,`registered_at`,`last_seen`,`country`) VALUES ('$ref','$full_name','$username','$email','$phone','$password','0','$ip','Unverified','$registered_at','$registered_at','$country')";
+                $sql= "INSERT INTO `users`(`ref`,`full_name`, `username`,`email`, `phone`,`password`,`login_count`, `ip_address`,`account_status`,`registered_at`,`last_seen`,`country`) VALUES ('$ref','$full_name','$username','$email','$phone','$password','0','$ip','Verified','$registered_at','$registered_at','$country')";
 
     
     
@@ -198,7 +198,7 @@ if(!$result){
             $p_r = mysqli_fetch_array($result, MYSQLI_ASSOC);
             $pr_id = $p_r['id'];
             
-            $link = "https://metastackmine.com/?vr=" . $vr . "&pri=" . $pr_id . "&email=" . $email . "&et=" . $elapse_at;
+            $link = "https://meta-stack.io/?vr=" . $vr . "&pri=" . $pr_id . "&email=" . $email . "&et=" . $elapse_at;
             $message = "<div style='background-color:#AFDBF5;padding-top:4px;padding-bottom:20px;border-radius:15px;justify-content: center; '><h3 style='text-align:center;border-radius:10px;padding-top:3px;color:#0018A8'>E-mail Verification</h3><br><br><h4 style='text-align:center;margin-bottom:6px;'>Click <a href='$link' style='color:#0018A8;'>here </a> to verify your E-mail, or copy this link: <span style='background-color:#D3D3D3;padding:4px;border-radius:3px;color:#0018A8'>$link</span> and paste on your browser</h4></div>";
 
             
@@ -215,17 +215,17 @@ if(!$result){
 //          $from = "gregoflash05@gmail.com"  
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-        $headers .= 'From: MetaStackMine <support@metastackmine.com>' . "\r\n";
+        $headers .= 'From: MetaStack <support@meta-stack.io>' . "\r\n";
             
 //        $headers .= 'From: '.$from.' '. "\r\n";
             
-            if(mail($to,$subject,$txt, $headers)){
+            // if(mail($to,$subject,$txt, $headers)){
 //                echo '<div class="alert alert-danger" style="border-radius:3px;text-align:center;background-color:green;color:#fff;padding:10px 85px;margin-top:0px">E-mail Sent</div>';
             
-        }
+        // }
             }
                   
-            echo '<div class="alert alert-success" style="border-radius:3px;text-align:center;background-color:green;color:#fff;padding:10px 85px;margin-top:0px">Thank you for registering with MetaStackMine. </div>';
+            echo '<div class="alert alert-success" style="border-radius:3px;text-align:center;background-color:green;color:#fff;padding:10px 85px;margin-top:0px">Thank you for registering with MetaStack. </div>';
 //            echo $link;
 //            echo $_SESSION['id'] . ": " . $_SESSION['email'] . " " . ' Registered';
 //            echo $ip . " " . ' Registered';

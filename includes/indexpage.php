@@ -270,12 +270,10 @@
        <div class="container">
          <div class="row">
            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-6">
-             <h1>Over<span> 20 Years ◦ </span><br>
-               Of Experience</h1>
-             <p>Within the last 5 years we have become one of the UK’s leading and forex trading company, as
-               well as having a worldwide student base. Our performance is measured by the satisfaction of
-               clients and can be widely seen online. There are reviews gathered by independent sources
-               about MetaStackMine that are publicly available. </p>
+             <h1><span> Stacking ◦ </span><br></h1>
+             <p>Staking is the process of actively participating in transaction validation (similar to mining) on a proof-of-stake (PoS) blockchain. 
+               On these blockchains, anyone with a minimum-required balance of a specific cryptocurrency can validate transactions and earn Staking rewards. 
+               Generate regular passive income without the hassle of jumping into risky positions or need to obtain in-depth technical knowledge.</p>
              <a onclick="openModal('register-modal')" class="btn btn--cta red-gradient" style="cursor: pointer">Get Started Now</a>
            </div>
          </div>
@@ -312,7 +310,7 @@
                  <use xlink:href="#investment-home"></use>
                </svg>
                <strong>SECURE AND RELIABLE </strong>
-               <p> All transactions on MetaStackMine are secure and encrypted as your safety to us, comes first.
+               <p> All transactions on MetaStack are secure and encrypted as your safety to us, comes first.
                  We ensure a strong security on all accounts and when an unsual activity is detected, you
                  will be prompted to do a verification challenge. Verification happens in real time </p>
              </div>
@@ -550,7 +548,7 @@
      }
    </style>
 
-   <div class="container mt-5">
+   <!-- <div class="container mt-5">
      <div class="affiliate-program-title">
        <h2 style="text-align: center;"> Bitcoin Mining</h2>
      </div>
@@ -571,16 +569,16 @@
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
                <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3140w</p>
              </div>
-             <!-- <div class="flex grey-bg rounded-sm">
+             <div class="flex grey-bg rounded-sm">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
                <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000408 BTC</p>
-             </div> -->
+             </div>
            </div>
            <div class="text-center">
              <p class="text-normal ">$10,329</p>
              <p class="text-xs mt-0 mb-1">(for 1/100)</p>
              <button class="text-capitalize buy-btn" onclick="openModal('account-modal')">buy</button>
-             <!-- <p class="text-xs mt-1">Calculate profit</p> -->
+             <p class="text-xs mt-1">Calculate profit</p>
            </div>
          </div>
        </div>
@@ -600,16 +598,16 @@
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
                <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3300w</p>
              </div>
-             <!-- <div class="flex grey-bg rounded-sm">
+             <div class="flex grey-bg rounded-sm">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
                <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000536 BTC</p>
-             </div> -->
+             </div>
            </div>
            <div class="text-center">
              <p class="text-normal ">$11,200</p>
              <p class="text-xs mt-0 mb-1">(for 1/100)</p>
              <button class="text-capitalize buy-btn" onclick="openModal('account-modal')">buy</button>
-             <!-- <p class="text-xs mt-1">Calculate profit</p> -->
+             <p class="text-xs mt-1">Calculate profit</p>
            </div>
          </div>
        </div>
@@ -629,16 +627,16 @@
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
                <p class="blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3050w</p>
              </div>
-             <!-- <div class="flex grey-bg rounded-sm">
+             <div class="flex grey-bg rounded-sm">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
                <p class="text-uppercase blue-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000702 BTC</p>
-             </div> -->
+             </div>
            </div>
            <div class="text-center">
              <p class="text-normal ">$12,525</p>
              <p class="text-xs mt-0 mb-1">(for 1/100)</p>
              <button class="text-capitalize buy-btn" onclick="openModal('account-modal')">buy</button>
-             <!-- <p class="text-xs mt-1">Calculate profit</p> -->
+             <p class="text-xs mt-1">Calculate profit</p>
            </div>
          </div>
        </div>
@@ -661,22 +659,22 @@
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">power</p>
                <p class="white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">3250w</p>
              </div>
-             <!-- <div class="flex grey-bg rounded-sm">
+             <div class="flex grey-bg rounded-sm">
                <p class="text-capitalize mt-0 py-8 pl-1 w-50">revenue 24h</p>
                <p class="text-uppercase white-bg rounded-sm mt-0 py-8 font-semibold text-center w-50">0.000619 BTC</p>
-             </div> -->
+             </div>
            </div>
            <div class="text-center">
              <p class="text-normal text-white">$14,830</p>
              <p class="text-xs mt-0 mb-1 text-white">(for 1/50)</p>
              <button class="text-capitalize buy-btn blue" onclick="openModal('account-modal')">buy</button>
-             <!-- <p class="text-xs mt-1 text-white">Calculate profit</p> -->
+             <p class="text-xs mt-1 text-white">Calculate profit</p>
            </div>
          </div>
        </div>
 
      </div>
-   </div>
+   </div> -->
 
    <div class="affiliate-program">
      <div class="container">
@@ -705,7 +703,7 @@
          <div class="row">
            <div class="col-md-2"></div>
            <div class="col-md-8">
-             <p class="now-left">Take advantage of our Invite a Friend Program. MetaStackMine introduces a new type
+             <p class="now-left">Take advantage of our Invite a Friend Program. MetaStack introduces a new type
                of affiliate program oriented at our traders who are willing to invite their friends and get
                rewarded for that. It has never been as simple as now. You don't have to make deposits in
                order to refer your friends anymore. </p>

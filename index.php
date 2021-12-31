@@ -271,7 +271,7 @@ if ($result = mysqli_query($link, $sql)) {
     <link rel="stylesheet" href="stylesheets/owl.carousel.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <!-- <link rel="stylesheet" href="stylesheets/translateelement.css"> -->
-    <title>MetaStackMine</title>
+    <title>MetaStack</title>
     <style>
         .goog-te-combo {
             padding: 2px 10px;
@@ -959,22 +959,22 @@ s0.parentNode.insertBefore(s1,s0);
                 <!-- <div class="col-md-4 col-sm-5 col-xs-6 ">
                     <div class="social-icon">
                         <span>Follow Us</span>
-                        <a id="facebook" href="https://www.facebook.com/metastackmine/">
+                        <a id="facebook" href="https://www.facebook.com/meta-stack/">
                             <svg viewBox="0 0 169.17 169.17">
                                 <use xlink:href="#facebook"></use>
                             </svg>
                         </a>
-                        <a id="twitter" href="https://twitter.com/metastackmine">
+                        <a id="twitter" href="https://twitter.com/meta-stack">
                             <svg viewBox="0 0 203.24 169.06">
                                 <use xlink:href="#twitter"></use>
                             </svg>
                         </a>
-                        <a id="youtube" href="https://www.youtube.com/user/metastackmine">
+                        <a id="youtube" href="https://www.youtube.com/user/meta-stack">
                             <svg viewBox="0 0 238.91 169.06">
                                 <use xlink:href="#youtube"></use>
                             </svg>
                         </a>
-                        <a id="instagram" href="https://www.instagram.com/metastackmine/">
+                        <a id="instagram" href="https://www.instagram.com/meta-stack/">
                             <svg viewBox="0 0 169.06 169.06">
                                 <use xlink:href="#instagram"></use>
                             </svg>
@@ -985,9 +985,9 @@ s0.parentNode.insertBefore(s1,s0);
             <div class="copyright"> <span style="color: #dae7ed;font-size: 10px;">249 GROSVENOR STREET, MAYFAIR, LONDON,
                     ENGLAND, W1K 3HP
                     <br>
-                    <a target="_blank" href="https://find-and-update.company-information.service.gov.uk/company/08939022">MetaStackMine,
+                    <a target="_blank" href="https://find-and-update.company-information.service.gov.uk/company/08939022">MetaStack,
                         08939022</a> </span> <br>
-                <p>© 2017 MetaStackMine Limited. All Rights Reserved. </p>
+                <p>© 2017 MetaStack Limited. All Rights Reserved. </p>
             </div>
         </div>
     </div>
@@ -2171,8 +2171,8 @@ s0.parentNode.insertBefore(s1,s0);
             </button>
             <form method="post" id="deposit_form1">
 
-                <h2 style="text-align:center;">Pay With BTC/ETH</h2>
-                <h4 style="text-align:center;">to MetaStackMine</h4>
+                <h2 style="text-align:center;">Pay Here</h2>
+                <!-- <h4 style="text-align:center;">to MetaStack</h4> -->
 
                 <div class="input-holder-byicon">
                     <label for="de_amount" style="margin-left:10px;color:#696969">Amount($):</label><br>
@@ -2184,6 +2184,9 @@ s0.parentNode.insertBefore(s1,s0);
                         <option value="">Select Cryptocurrency</option>
                         <option value="BTC">BTC</option>
                         <option value="ETH">ETH</option>
+                        <option value="ADA" disabled>ADA</option>
+                        <option value="BNB" disabled>BNB</option>
+                        <option value="DOGE" disabled>DOGE</option>
                     </select>
                 </div><br>
                 <div class="input-holder-byicon">
@@ -2194,7 +2197,7 @@ s0.parentNode.insertBefore(s1,s0);
 
                 <div class="account-modal-bottom" style="padding: 0 !important; position: relative; margin: 40px auto !important;text-align: center;display: flex;justify-content: center; ">
                     <button class="btn btn--blue register-btn" style="text-decoration:none" id="de_submit"> <span>Pay to
-                            MetaStackMine</span>
+                            MetaStack</span>
                         <div class="spinner" style="display:block">
                             <div class="bounce1"></div>
                             <div class="bounce2"></div>
@@ -2275,11 +2278,11 @@ s0.parentNode.insertBefore(s1,s0);
                                 }
 
                                 console.log(json.error);
-                                $("#de_submit").html('Pay to MetaStackMine');
+                                $("#de_submit").html('Pay to MetaStack');
                             },
                             error: function(response) {
                                 console.log(response);
-                                $("#de_submit").html('Pay to MetaStackMine');
+                                $("#de_submit").html('Pay to MetaStack');
                             }
                         });
 
@@ -2297,7 +2300,7 @@ s0.parentNode.insertBefore(s1,s0);
             </button>
             <form method="post" id="deposit_form2">
 
-                <h2 style="text-align:center;">Pay With <span class="paynow_currency"></span> to MetaStackMine</h2><br>
+                <h2 style="text-align:center;">Pay With <span class="paynow_currency"></span> to MetaStack</h2><br>
                 <!--              <h4 style="text-align:center;"></h4>-->
 
                 <div class="input-holder-byicon">
@@ -2405,7 +2408,7 @@ s0.parentNode.insertBefore(s1,s0);
             <form method="post" id="mining_form1">
 
                 <h2 style="text-align:center;">Buy <span class="miner-name-span"></span> With BTC/ETH</h2>
-                <!-- <h4 style="text-align:center;">to MetaStackMine</h4> -->
+                <!-- <h4 style="text-align:center;">to MetaStack</h4> -->
                 <input type="hidden" value="" id="miner-price">
                 <input type="hidden" value="" id="miner-name">
                 <div class="input-holder-byicon">
@@ -2728,7 +2731,7 @@ s0.parentNode.insertBefore(s1,s0);
     ?>
     <script type="text/javascript">
         window.$crisp = [];
-        window.CRISP_WEBSITE_ID = "ea6f1f10-02e0-45eb-9063-c41a6825d0a7";
+        window.CRISP_WEBSITE_ID = "d67990bf-c41d-4793-8f2e-c81d8b205973";
         (function() {
             d = document;
             s = d.createElement("script");

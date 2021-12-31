@@ -36,7 +36,7 @@
               <line x1="48.6" y1="50.8" x2="59.66" y2="39.75" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"></line>
               <polyline points="59.66 34.71 60.25 39 64.72 39.67" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"></polyline>
             </svg>
-            <h2>MetaStackMine – your best Forex broker</h2>
+            <h2>MetaStack – your best Forex broker</h2>
             <p> We are team of professional traders in Forex & Crypto Exchange who know how to grab the profit at the end of the day. </p>
             <a class="btn btn--blue" href="?a=cust&page=plans">Our Trading Plans</a> </div>
         </div>
@@ -44,8 +44,8 @@
     </div>
     <div class="about-description">
       <div class="container">
-        <h3>Why MetaStackMine</h3>
-        <p class="about-description__answer" style="text-indent: initial;">We maintain high standards for secure trading environments, and offer the best and fairest trading conditions for every Forex trader. Every year we improve our conditions and standards in an ongoing effort to make trading with the #1 Forex broker MetaStackMine more cost-effective than anyone else In the market. We help Forex traders develop the knowledge and skills they need to trade efficiently and responsibly. </p>
+        <h3>Why MetaStack</h3>
+        <p class="about-description__answer" style="text-indent: initial;">We maintain high standards for secure trading environments, and offer the best and fairest trading conditions for every Forex trader. Every year we improve our conditions and standards in an ongoing effort to make trading with the #1 Forex broker MetaStack more cost-effective than anyone else In the market. We help Forex traders develop the knowledge and skills they need to trade efficiently and responsibly. </p>
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-6">
             <p> We manage funds for thousands of traders from all over the world while enjoying the highest rate of client satisfaction in the industry. Our vetted professionals execute various profitable trading strategies in cryptocurrencies, futures, FX, options and commodities on over two hundred market centers around the world.  </p>

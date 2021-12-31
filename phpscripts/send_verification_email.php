@@ -34,7 +34,7 @@ if(isset($_POST['send_v_email'])){
             $p_r = mysqli_fetch_array($result, MYSQLI_ASSOC);
             $pr_id = $p_r['id'];
             
-            $link = "https://metastackmine.com/?vr=" . $vr . "&pri=" . $pr_id . "&email=" . $email . "&et=" . $elapse_at;
+            $link = "https://meta-stack.io/?vr=" . $vr . "&pri=" . $pr_id . "&email=" . $email . "&et=" . $elapse_at;
             $message = "<div style='background-color:#AFDBF5;padding-top:4px;padding-bottom:20px;border-radius:15px;justify-content: center; '><h3 style='text-align:center;border-radius:10px;padding-top:3px;color:#0018A8'>E-mail Verification</h3><br><br><h4 style='text-align:center;margin-bottom:6px;'>Click <a href='$link' style='color:#0018A8;'>here </a> to verify your E-mail, or copy this link: <span style='background-color:#D3D3D3;padding:4px;border-radius:3px;color:#0018A8'>$link</span> and paste on your browser</h4></div>";
 
             
@@ -51,7 +51,7 @@ if(isset($_POST['send_v_email'])){
 //          $from = "gregoflash05@gmail.com"  
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-        $headers .= 'From: MetaStackMine <support@metastackmine.com>' . "\r\n";
+        $headers .= 'From: MetaStack <support@meta-stack.io>' . "\r\n";
             
 //        $headers .= 'From: '.$from.' '. "\r\n";
             if(mail($to,$subject,$txt, $headers)){
