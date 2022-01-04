@@ -37,7 +37,7 @@ if (isset($_GET['sr']) && isset($_GET['pri']) && isset($_GET['email']) && isset(
 if (isset($_SESSION['id'])) {
     $base_id = $_SESSION['id'];
 
-    $plan_duration = array(0, 86400, 259200, 432000, 864000);
+    $plan_duration = array(0, 259200, 432000, 864000, 1728000);
     $plan_percentage = array(0, 0.03, 0.05, 0.1, 0.15);
     $part_plan_percentage = array(0, 0.03, 0.0167, 0.02, 0.015);
 

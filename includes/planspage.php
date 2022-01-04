@@ -484,7 +484,7 @@
           <div class="plan-item plan1">
             <div class="plan-body">
               <h2 class="plan-set1">RUBY</h2>
-              <div class="plan-profit"> <strong>3<b>%</b></strong> <span> <br>In 24 hours</span></div>
+              <div class="plan-profit"> <strong>3<b>%</b></strong> <span> <br>In 3 days</span></div>
               <!-- <div class="plan-bg"></div> -->
               <div class="plan-bottom"> <span>Minimum Deposit:</span> <strong>$100<b></b></strong> <span>Maximum Deposit:</span> <strong>$999</strong>
                 <div class="">
@@ -499,7 +499,7 @@
           <div class="plan-item plan2">
             <div class="plan-body">
               <h2 class="plan-set1">SILVER</h2>
-              <div class="plan-profit"> <strong>5<b>%</b></strong> <span><br>In 3 Days</span></div>
+              <div class="plan-profit"> <strong>5<b>%</b></strong> <span><br>In 5 Days</span></div>
               <!-- <div class="plan-bg"></div> -->
               <div class="plan-bottom"> <span>Minimum Deposit:</span> <strong>$1,000<b></b></strong> <span>Maximum Deposit:</span> <strong>$9,999</strong>
                 <div class="">
@@ -523,7 +523,7 @@
             <div class="plan-item plan1">
               <div class="plan-body">
                 <h2 class="plan-set1">GOLD</h2>
-                <div class="plan-profit"> <strong>10<b>%</b></strong> <span> <br>In 5 Days</span></div>
+                <div class="plan-profit"> <strong>10<b>%</b></strong> <span> <br>In 10 Days</span></div>
                 <!-- <div class="plan-bg"></div> -->
                 <div class="plan-bottom"> <span>Minimum Deposit:</span> <strong>$10,000<b></b></strong> <span>Maximum Deposit:</span> <strong>$29,999</strong>
                   <div class="">
@@ -538,7 +538,7 @@
             <div class="plan-item plan2">
               <div class="plan-body">
                 <h2 class="plan-set1">DIAMOND</h2>
-                <div class="plan-profit"> <strong>15<b>% </b></strong><span>In 10 Days</span> </div>
+                <div class="plan-profit"> <strong>15<b>% </b></strong><span>In 20 Days</span> </div>
                 <!--                <div class="plan-bg"></div>-->
 
                 <div class="plan-bottom"> <span>Minimum Deposit:</span> <strong>$30,000<b></b></strong> <span>Maximum Deposit:</span> <strong>Unlimited</strong>

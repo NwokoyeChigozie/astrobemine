@@ -358,10 +358,10 @@
            </svg>
            <div><strong>1.5</strong><b>%</b></div>
            <div><span class="profit"></span></div>
-           <div>daily for 10 days</div>
+           <div>daily for 20 days</div>
          </div>
          <h2>Profitable Trading Plans</h2>
-         <p class="now-left">Our 15% in 10 days Diamond package is recommended for business class and high budget
+         <p class="now-left">Our 15% in 20 days Diamond package is recommended for business class and high budget
            traders as this has a higher lot size and yields more returns as profits. </p>
          <div class="invest-now"> <a href="?a=cust&page=plans" class="btn btn--blue">View Trading Plans</a>
          </div>

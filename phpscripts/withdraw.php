@@ -82,7 +82,7 @@ if(isset($_POST['get_amount'])){
 
 
 if(isset($_POST['withdrawal_submit'])){ 
-    $plan_duration = array(0, 86400,259200,432000,864000);    
+    $plan_duration = array(0, 259200, 432000, 864000, 1728000);    
     $purpose = "Withdrawal";
     $max_amount = 0;
     $plans_b = [];
@@ -111,7 +111,7 @@ if(isset($_POST['withdrawal_submit'])){
   
     function check_plan($u_id, $plan){
         include('connection.php');
-        $plan_duration = array(0, 86400,259200,432000,864000);  
+        $plan_duration = array(0, 259200, 432000, 864000, 1728000);
         $plans_r = [];
                $sql = "SELECT * FROM `deposit_list` WHERE u_id = '$u_id' AND type = '$plan'" ;
                                 
