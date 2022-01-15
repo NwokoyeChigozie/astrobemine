@@ -7,43 +7,7 @@ CREATE TABLE `admin` (
     `minimum_amount` VARCHAR(100) NOT NULL DEFAULT '',
     `bitcoin_address` VARCHAR(100) NOT NULL DEFAULT '',
     `ethereum_address` VARCHAR(100) NOT NULL DEFAULT '',
-    PRIMARY KEY (`id`)
-) ENGINE = InnoDB;
-
-INSERT INTO
-    `admin` (
-        `id`,
-        `username`,
-        `password`,
-        `support_email`,
-        `minimum_amount`,
-        `bitcoin_address`,
-        `ethereum_address`,
-        `support_phone`
-    )
-VALUES
-    (
-        '1',
-        'metastackadmin',
-        '977302936afc03b7637c7e0acd6273fd80a9898e01733251fa589d058206ee88',
-        'support@meta-stack.io',
-        '20',
-        'btc-infinspfinsif',
-        'eth-sufbuosbfousjbfoujs',
-        '+1 (913) 276-0376'
-    );
-
-CREATE TABLE `admin` (
-    `id` INT NOT NULL AUTO_INCREMENT,
-    `username` VARCHAR(100) NOT NULL DEFAULT '',
-    `password` VARCHAR(100) NOT NULL DEFAULT '',
-    `support_email` VARCHAR(300) NOT NULL DEFAULT '',
-    `support_phone` VARCHAR(300) NOT NULL DEFAULT '',
-    `minimum_amount` VARCHAR(100) NOT NULL DEFAULT '',
-    `bitcoin_address` VARCHAR(100) NOT NULL DEFAULT '',
-    `ethereum_address` VARCHAR(100) NOT NULL DEFAULT '',
     `bnb_address` VARCHAR(100) NOT NULL DEFAULT '',
-    `ada_address` VARCHAR(100) NOT NULL DEFAULT '',
     `xrp_address` VARCHAR(100) NOT NULL DEFAULT '',
     `doge_address` VARCHAR(100) NOT NULL DEFAULT '',
     PRIMARY KEY (`id`)
@@ -56,13 +20,12 @@ INSERT INTO
         `password`,
         `support_email`,
         `minimum_amount`,
-        `support_phone`,
         `bitcoin_address`,
         `ethereum_address`,
         `bnb_address`,
-        `ada_address`,
         `xrp_address`,
-        `doge_address`
+        `doge_address`,
+        `support_phone`
     )
 VALUES
     (
@@ -71,14 +34,14 @@ VALUES
         '977302936afc03b7637c7e0acd6273fd80a9898e01733251fa589d058206ee88',
         'support@meta-stack.io',
         '20',
-        '+1 (765)Â 325-5529',
-        '1CcXysaicrBmGbP7u2JZPGKdndbLB452jk',
-        '0xeb440bdeb55d9e05e20be0ad3e716258a2722c8a',
-        '0xeb440bdeb55d9e05e20be0ad3e716258a2722c8a',
-        '0xeb440bdeb55d9e05e20be0ad3e716258a2722c8a',
-        '0xeb440bdeb55d9e05e20be0ad3e716258a2722c8a',
-        '0xeb440bdeb55d9e05e20be0ad3e716258a2722c8a'
+        'btc-infinspfinsif',
+        'eth-sufbuosbfousjbfoujs',
+        'bnb-sufbuosbfousjbfoujs',
+        'xrp-sufbuosbfousjbfoujs',
+        'doge-sufbuosbfousjbfoujs',
+        '+1 (913) 276-0376'
     );
+
 
 CREATE TABLE `users` (
     `id` INT NOT NULL AUTO_INCREMENT,

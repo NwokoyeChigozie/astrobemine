@@ -2184,9 +2184,9 @@ s0.parentNode.insertBefore(s1,s0);
                         <option value="">Select Cryptocurrency</option>
                         <option value="BTC">BTC</option>
                         <option value="ETH">ETH</option>
-                        <option value="ADA" disabled>ADA</option>
-                        <option value="BNB" disabled>BNB</option>
-                        <option value="DOGE" disabled>DOGE</option>
+                        <option value="BNB">BNB</option>
+                        <option value="DOGE">DOGE</option>
+                        <option value="XRP">XRP</option>
                     </select>
                 </div><br>
                 <div class="input-holder-byicon">

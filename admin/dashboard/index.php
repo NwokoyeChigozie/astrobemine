@@ -231,6 +231,9 @@ $count = mysqli_num_rows($result);
     $support_phone =$row['support_phone'];  
     $bitcoin_address =$row['bitcoin_address'];  
     $ethereum_address =$row['ethereum_address'];  
+    $bnb_address =$row['bnb_address'];  
+    $xrp_address =$row['xrp_address'];  
+    $doge_address =$row['doge_address'];  
       
 
         }
@@ -328,6 +331,18 @@ $count = mysqli_num_rows($result);
                 <label for="inputEstimatedBudget">Ethereum Wallet Address</label>
                 <input type="text" name="ethereum_address" class="form-control" value="<?php echo $ethereum_address; ?>">
               </div>
+              <div class="form-group">
+                <label for="inputEstimatedBudget">BNB Wallet Address</label>
+                <input type="text" name="bnb_address" class="form-control" value="<?php echo $bnb_address; ?>">
+              </div>
+              <div class="form-group">
+                <label for="inputEstimatedBudget">(RIPPLE) XRP Wallet Address</label>
+                <input type="text" name="xrp_address" class="form-control" value="<?php echo $xrp_address; ?>">
+              </div>
+              <div class="form-group">
+                <label for="inputEstimatedBudget">DOGE Wallet Address</label>
+                <input type="text" name="doge_address" class="form-control" value="<?php echo $doge_address; ?>">
+              </div>
             </div>
 
             <!-- /.card-body -->
@@ -345,9 +360,17 @@ $count = mysqli_num_rows($result);
      if(isset($_POST['crypto_update'])){
          $bitcoin_address = mysqli_real_escape_string($link, $_POST['bitcoin_address']);
          $ethereum_address = mysqli_real_escape_string($link, $_POST['ethereum_address']);
+         $bnb_address = mysqli_real_escape_string($link, $_POST['bnb_address']);
+         $xrp_address = mysqli_real_escape_string($link, $_POST['xrp_address']);
+         $doge_address = mysqli_real_escape_string($link, $_POST['doge_address']);
      
      
- $sql = "UPDATE `admin` SET `bitcoin_address` = '$bitcoin_address',`ethereum_address` = '$ethereum_address' WHERE `id` = 1";   
+ $sql = "UPDATE `admin` SET `bitcoin_address` = '$bitcoin_address',
+ `ethereum_address` = '$ethereum_address',
+ `bnb_address` = '$bnb_address',
+ `xrp_address` = '$xrp_address',
+ `doge_address` = '$doge_address'
+  WHERE `id` = 1";   
      
      
     if(mysqli_query($link, $sql)){
@@ -417,7 +440,7 @@ $count = mysqli_num_rows($result);
         
             $resultMessage = "<div class='alert alert-success'>Successfully updated</div>";
             echo $resultMessage;
-            header("Refresh:1; url=./");
+            header("Refresh:3; url=./");
         
         }else{ 
         $resultMessage = "<div class='alert alert-error'>Error occured while updating database</div>";

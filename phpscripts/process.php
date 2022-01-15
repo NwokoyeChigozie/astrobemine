@@ -11,15 +11,13 @@ include('cryptofunctions.php');
     if(mysqli_num_rows($result)>0){
         while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){ 
     $bitcoin_address =$row['bitcoin_address'];  
-    $ethereum_address =$row['ethereum_address'];  
+    $ethereum_address =$row['ethereum_address']; 
+    $bnb_address =$row['bnb_address'];  
+    $xrp_address =$row['xrp_address'];  
+    $doge_address =$row['doge_address'];   
         }
         mysqli_free_result($result);
-
-    }else{
-
-         }
-}else{ 
-            
+    }
 }    
 /////////////////////////////////////////////////////////////////////////////////////////    
     
@@ -48,29 +46,38 @@ if(empty($pay_currency)){
             die();
 }
 //////////////////////////////////////////////////////////////////    
-$url='https://bitpay.com/api/rates';
-$json=json_decode( file_get_contents( $url ) );
-$dollar=$btc=0;
-//print_r($json);
-foreach( $json as $obj ){
-    if( $obj->code=='USD' ){
-        $btc_to_usd_rate=$obj->rate;
-    }elseif($obj->code=='ETH'){
-        $btc_to_eth_rate=$obj->rate;
-    }
+// $url='https://bitpay.com/api/rates';
+// $json=json_decode( file_get_contents( $url ) );
+// $dollar=$btc=0;
+// //print_r($json);
+// foreach( $json as $obj ){
+//     if( $obj->code=='USD' ){
+//         $btc_to_usd_rate=$obj->rate;
+//     }elseif($obj->code=='ETH'){
+//         $btc_to_eth_rate=$obj->rate;
+//     }
     
-}
+// }
 /////////////////////////////////////////////////////////////
 $scurrency = "USD";
 //$rcurrency = "BTC";
 
-$main_amount = converting($amount, $btc_to_usd_rate, $btc_to_eth_rate, $pay_currency);  
+// $main_amount = converting($amount, $btc_to_usd_rate, $btc_to_eth_rate, $pay_currency); 
+$main_amount = converting($amount, $pay_currency);   
 
-    $wallet_address = $bitcoin_address;
+$wallet_address = $bitcoin_address;
 if($pay_currency == "BTC"){
     $wallet_address = $bitcoin_address;
 }elseif($pay_currency == "ETH"){
     $wallet_address = $ethereum_address;
+}elseif($pay_currency == "BNB"){
+    $wallet_address = $bnb_address;
+}elseif($pay_currency == "ADA"){
+    $wallet_address = $ada_address;
+}elseif($pay_currency == "XRP"){
+    $wallet_address = $xrp_address;
+}elseif($pay_currency == "DOGE"){
+    $wallet_address = $doge_address;
 }
     
     

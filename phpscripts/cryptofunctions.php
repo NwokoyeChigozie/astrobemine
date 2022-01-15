@@ -35,21 +35,59 @@ function to_eight($input){
 
 
 
-function usd_to_btc($usd_amount, $btc_to_usd_rate){
-    return to_eight($usd_amount / $btc_to_usd_rate);
-}
+// function usd_to_btc($usd_amount, $btc_to_usd_rate){
+//     return to_eight($usd_amount / $btc_to_usd_rate);
+// }
 
-function usd_to_eth($usd_amount, $btc_to_usd_rate, $btc_to_eth_rate){
-    $btc_amount = $usd_amount / $btc_to_usd_rate;
-    return to_eight($btc_amount * $btc_to_eth_rate);
-}
+// function usd_to_eth($usd_amount, $btc_to_usd_rate, $btc_to_eth_rate){
+//     $btc_amount = $usd_amount / $btc_to_usd_rate;
+//     return to_eight($btc_amount * $btc_to_eth_rate);
+// }
 
-function converting($usd_amount, $btc_to_usd_rate, $btc_to_eth_rate, $currency){
-    if($currency == "BTC"){
-        return usd_to_btc($usd_amount, $btc_to_usd_rate);
-    }elseif($currency == "ETH"){
-        return usd_to_eth($usd_amount, $btc_to_usd_rate, $btc_to_eth_rate);
+// function converting($usd_amount, $btc_to_usd_rate, $btc_to_eth_rate, $currency){
+//     if($currency == "BTC"){
+//         return usd_to_btc($usd_amount, $btc_to_usd_rate);
+//     }elseif($currency == "ETH"){
+//         return usd_to_eth($usd_amount, $btc_to_usd_rate, $btc_to_eth_rate);
+//     }
+// }
+
+function get_cryp_value_bitpay($amount,$pay_currency){
+    $url='https://bitpay.com/api/rates';
+    $json=json_decode( file_get_contents( $url ) );
+        $btc_to_usd_rate= 0;
+        $btc_to_next_rate= 0;
+        foreach( $json as $obj ){
+            if($obj->code=='USD'){
+                $btc_to_usd_rate=$obj->rate;
+            }elseif($obj->code==$pay_currency){
+                $btc_to_next_rate=$obj->rate;
+                break;
+            }
+    
+    
+        }
+            $btc_amount = $amount / $btc_to_usd_rate;
+            return to_eight($btc_amount * $btc_to_next_rate);
     }
-}
+        
+    function get_cryp_value_4nomics($amount,$pay_currency){
+    $url='https://api.nomics.com/v1/exchange-rates?key=fce316ad1f238e2617206d99b2cb52f7c64aa07f';
+    $json=json_decode( file_get_contents( $url ) );
+        foreach( $json as $obj ){
+        if( $obj->currency== $pay_currency){
+            return to_eight($amount/($obj->rate));
+        }
+    }
+    
+    }
+    
+    function converting($amount, $pay_currency){
+        if ($pay_currency == "BTC"  || $pay_currency == "BNB"){
+            return get_cryp_value_4nomics($amount,$pay_currency);
+        }else{
+            return get_cryp_value_bitpay($amount,$pay_currency);
+        }
+    }
 
 ?>
