@@ -591,7 +591,7 @@
             <input type="radio" name="plan" class="planRadio" id="plan-2">
             <label for="plan-2" class="select-plan-item">
               <b>5%</b> Profit
-              <span>In 35 Days</span>
+              <span>In 5 Days</span>
             </label>
           </div>
           <div class="services-profit__detail">
