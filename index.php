@@ -2309,7 +2309,7 @@ s0.parentNode.insertBefore(s1,s0);
                 </div>
 
                 <h4 style="text-align:left;">Please pay exactly the above stated <span class="paynow_currency"></span>
-                    amount to this address: <br><br><span class="paynow_wallet" style="padding:10px;background-color:#DCDCDC;border-radius:3px"></span></h4>
+                    amount to this address: <br><br><span class="paynow_wallet span12" style="padding:10px;background-color:#DCDCDC;border-radius:3px"></span></h4>
                 <br><br>
                 <input type="hidden" id="last_id" value="">
                 <h3 style="text-align:center;">Paid?</h3>
