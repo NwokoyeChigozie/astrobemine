@@ -122,16 +122,16 @@
           <h4 style="text-transform: uppercase; margin-bottom: 10px;">Select Your Investment Plan</h4>
           <div class="select-plan"> <input type="hidden" class="plantyper" value="1">
             <input type="radio" name="h_id" value="1" class="plantyper planRadio planyx" id="plan-1" checked="">
-            <label for="plan-1" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>3.00%</b> Profit <span>In 1 Day(s)</span>
+            <label for="plan-1" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>3.00%</b> Profit <span>In 3 Day(s)</span>
             </label> <input type="hidden" class="plantyper" value="2">
             <input type="radio" name="h_id" value="2" class="plantyper planRadio planyx" id="plan-2">
-            <label for="plan-2" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>5.00%</b> Profit <span>In 3 Day(s)</span>
+            <label for="plan-2" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>5.00%</b> Profit <span>In 5 Day(s)</span>
             </label> <input type="hidden" class="plantyper" value="3">
             <input type="radio" name="h_id" value="3" class="plantyper planRadio planyx" id="plan-3">
-            <label for="plan-3" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>10.00%</b> Profit <span>In 5 Day(s)</span>
+            <label for="plan-3" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>10.00%</b> Profit <span>In 10 Day(s)</span>
             </label> <input type="hidden" class="plantyper" value="4">
             <input type="radio" name="h_id" value="4" class="plantyper planRadio planyx" id="plan-4">
-            <label for="plan-4" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>15.00%</b> Profit daily <span>In 10 Day(s)</span>
+            <label for="plan-4" class="select-plan-item col-xl-6 col-lg-6 col-md-12 col-sm-12" style="margin-bottom: 10px;"> <b>15.00%</b> Profit daily <span>In 20 Day(s)</span>
             </label>
           </div>
           <div class="float-profit-svg dashboard">
